@@ -3,6 +3,9 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
+import Intro2 from '../components/Intro2'
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
+// import Image from '../components/Image'
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -78,7 +81,7 @@ const HomePage = ({ data }) => {
     : ""
   const sIcons = Icons.socialIcons.map((icons, index) => {
     return (
-      <div key={"social icons" + index}>
+      <div style={{display:''}} key={"social icons" + index}>
         {icons.icon === "facebook" ? (
           <Link to={icons.url} target="_blank">
             <RiFacebookBoxFill />
@@ -197,6 +200,9 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <Seo />
+      <div className="intro">
+      <Intro2 />
+      </div>
       <div className="home-banner grids col-1 sm-2">
         <div>
           <h1 className="title">{frontmatter.title}</h1>
@@ -230,7 +236,16 @@ const HomePage = ({ data }) => {
               variant: "variants.socialIcons",
             }}
           >
-            {sIcons}
+            <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
+    <li className="socialtext"><h3>I&apos;m<br />Social</h3></li>
+  <li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
+  <li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
+  <li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
+  <li><a className="social" href="https://www.instagram.com/twilightscapes" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li>
+  <li style={{display: 'none',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
+  
+  <li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
+  </ul>
           </div>
         </div>
         <div>
@@ -246,6 +261,8 @@ const HomePage = ({ data }) => {
         </div>
       </div>
       <BlogListHome data={posts} />
+      
+
     </Layout>
   )
 }

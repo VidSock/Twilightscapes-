@@ -1,12 +1,12 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Night Photography
+tagline: Todd Lambert - A pioneer in night photography
+featuredImage: /assets/todd.jpg
 cta:
-  ctaText: Know more
+  ctaText: More About Todd
   ctaLink: /about
 ---
 
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared. Let his award winning portfolio prove to you that the night is indeed beautiful.

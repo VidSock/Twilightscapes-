@@ -78,7 +78,7 @@ const searchStyle = {
     display: "none",
   },
   searchField: {
-    zIndex: "11111",
+    zIndex: "1",
     button: {
       p: 0,
       fontSize: "25px",

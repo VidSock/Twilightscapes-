@@ -43,7 +43,7 @@ const Layout = ({ children, className, props }) => {
           <Theme />
         </div>
       </Header>
-      <main className={"container " + className}>{children}</main>
+      <main className={" container " + className}>{children}</main>
       <Footer />
     </div>
   )
