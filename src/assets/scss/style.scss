@@ -455,6 +455,52 @@ article img {
 
 
 
+
+  .galmenu{
+    display: flex; justify-content: space-around; align-items: center; margin:0 3%;
+    background:#111;
+    padding:4px 4px;
+    border-radius:10px;
+    width:auto;
+    }
+    .galmenu li { height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
+    
+    
+    
+    .galmenu .galgrad{display: block; padding:0; border-radius:6px; text-shadow: 1px 1px 1px black; height:100%;}
+    
+    .galmenu .galgrad{
+    background: #333; /* Old browsers */
+    }
+    
+    .galmenu [aria-current] {
+    background: #000; /* Old browsers */
+    border:1px solid #444;
+    cursor: pointer;
+    }
+    
+    
+    @media (max-width: 48rem) {
+    .galmenu{
+    display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
+    }
+    .galmenu li{margin:0 0 3px 0;}
+    .custom-gal li { height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
+    
+    .galmenu li:first-child{border:0px solid red !important; width:100% !important;}
+    
+    }
+
+
+
+
+
+
+
+
+  
+
+
 footer{background-color: #000; padding:.1rem 0rem; display:flex; justify-content: center; color:#fff; }
 .socialmenu{display: flex; flex-wrap: nowrap; list-style-type: none;}
 .social{ margin:.25rem 1.1rem .25rem 0; justify-content:baseline;}

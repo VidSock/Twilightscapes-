@@ -11,50 +11,7 @@ import {  RiArrowRightSLine } from "react-icons/ri"
 
 const CustomBox = styled.div`
 
-.galmenu{
-display: flex; justify-content: space-around; align-items: center; margin:0 3%;
-background:#111;
-padding:4px 4px;
-border-radius:10px;
-// border:1px solid #444;
-width:auto;
-}
-.galmenu li {width:; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
 
-
-
-.galmenu .galgrad{display: block; padding:0; border-radius:6px; text-shadow: 1px 1px 1px black; height:100%;}
-
-.galmenu .galgrad{
-background: #333; /* Old browsers */
-
-// background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
-// background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-}
-
-.galmenu [aria-current] {
-background: #000; /* Old browsers */
-border:1px solid #444;
-cursor: pointer;
-
-// background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-// background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-
-@media (max-width: 48rem) {
-.galmenu{
-display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
-}
-.galmenu li{width:; margin:0 0 3px 0;}
-.custom-gal li {width:; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
-
-.galmenu li:first-child{border:0px solid red !important; width:100% !important;}
-
-}
 
 
 `
