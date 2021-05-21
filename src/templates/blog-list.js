@@ -177,6 +177,29 @@ class BlogIndex extends React.Component {
     </article>
 
 
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+    }}
+  >
+     <a href="/ghosttowns"><div >
+      <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div></a><div className="post-content"><h2 className="title"><a href="/ghosttowns">Ghost Towns</a></h2><p className="meta">The real Old West comes alive at night</p></div>
+    </article>
+
+
+
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+    }}
+  >
+     <a href="/crazygeo"><div >
+      <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div></a><div className="post-content"><h2 className="title"><a href="/crazygeo">Crazy Geology</a></h2><p className="meta">The world is awesome - just watch your step!</p></div>
+    </article>
   
       
  {posts}</div>
