@@ -32,7 +32,7 @@ const PostMaker = ({ data }) => (
   >
      <a href="/favorites"><div >
       <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+        </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
     </article>
 
     <article
@@ -43,7 +43,7 @@ const PostMaker = ({ data }) => (
   >
      <a href="/favorites"><div >
       <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+        </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
     </article>
 
 
@@ -55,7 +55,7 @@ const PostMaker = ({ data }) => (
   >
      <a href="/favorites"><div >
       <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+        </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
     </article>
 
 
@@ -69,6 +69,7 @@ const PostMaker = ({ data }) => (
       sx={{
         variant: "variants.button",
       }}
+      title="See More Galleries"
     >
       See more
       <span className="icon -right">

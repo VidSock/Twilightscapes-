@@ -14,7 +14,7 @@ const MenuItems = [
     path: "/galleries",
     title: "Galleries",
   },
-  
+
   {
     path: "/about",
     title: "About",
@@ -56,6 +56,7 @@ class Navigation extends React.Component {
         <button
           onClick={this.handleToggleClick}
           className={"menu-trigger" + (this.state.showMenu ? " is-active" : "")}
+          aria-label="Open Menu"
         >
           <div className="icon-menu-line">
             <RiMenu3Line />

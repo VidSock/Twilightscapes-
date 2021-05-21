@@ -31,7 +31,7 @@ const Intro2 = () => (
 <CustomBox style={{}}>
 
 
-<div className="outer" style={{margin:'0 -20px'}}>
+<div className="outer" style={{margin:'0 -20px', overflow:'hidden'}}>
   
 <div className="image-wrap" style={{position:'relative', overflow:'hidden', height:'90vh', paddingTop:'', borderBottom:'0px solid #222', borderRight:'0rem solid #dd4400', borderLeft:'0rem solid #dd4400', }}>
   

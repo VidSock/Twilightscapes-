@@ -4,8 +4,8 @@
     "titleTemplate": "%s",
     "description": "Unique night photography",
     "siteUrl": "https://twilightscapes.com",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
+    "image": "/assets/tw-logo-white.svg",
+    "iconimage": "/assets/tw-logo-white.svg",
     "twitterUsername": "@toddlambert"
   },
   "ga": "UA-49869143-1"

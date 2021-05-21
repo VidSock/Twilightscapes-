@@ -6,28 +6,12 @@ import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 // import Image from '../components/Image'
-import {
-  RiFacebookBoxFill,
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiYoutubeFill,
-  RiInstagramFill,
-  RiRssFill,
-  RiGithubFill,
-  RiTelegramFill,
-  RiPinterestFill,
-  RiSnapchatFill,
-  RiSkypeFill,
-  RiDribbbleFill,
-  RiMediumFill,
-  RiBehanceFill,
-} from "react-icons/ri"
-import { FaWordpress, FaVk } from "react-icons/fa"
+
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
-import Icons from "../util/socialmedia.json"
+
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -79,124 +63,7 @@ const HomePage = ({ data }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
-  const sIcons = Icons.socialIcons.map((icons, index) => {
-    return (
-      <div style={{display:''}} key={"social icons" + index}>
-        {icons.icon === "facebook" ? (
-          <Link to={icons.url} target="_blank">
-            <RiFacebookBoxFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "twitter" ? (
-          <Link to={icons.url} target="_blank">
-            <RiTwitterFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "linkedin" ? (
-          <Link to={icons.url} target="_blank">
-            <RiLinkedinBoxFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "youtube" ? (
-          <Link to={icons.url} target="_blank">
-            <RiYoutubeFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "instagram" ? (
-          <Link to={icons.url} target="_blank">
-            <RiInstagramFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "rss" ? (
-          <Link to={icons.url} target="_blank">
-            <RiRssFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "github" ? (
-          <Link to={icons.url} target="_blank">
-            <RiGithubFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "telegram" ? (
-          <Link to={icons.url} target="_blank">
-            <RiTelegramFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "pinterest" ? (
-          <Link to={icons.url} target="_blank">
-            <RiPinterestFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "snapchat" ? (
-          <Link to={icons.url} target="_blank">
-            <RiSnapchatFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "skype" ? (
-          <Link to={icons.url} target="_blank">
-            <RiSkypeFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "wordpress" ? (
-          <Link to={icons.url} target="_blank">
-            <FaWordpress />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "dribbble" ? (
-          <Link to={icons.url} target="_blank">
-            <RiDribbbleFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "medium" ? (
-          <Link to={icons.url} target="_blank">
-            <RiMediumFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "behance" ? (
-          <Link to={icons.url} target="_blank">
-            <RiBehanceFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "vk" ? (
-          <Link to={icons.url} target="_blank">
-            <FaVk />
-          </Link>
-        ) : (
-          ""
-        )}
-      </div>
-    )
-  })
+  
   return (
     <Layout>
       <Seo />
@@ -237,7 +104,7 @@ const HomePage = ({ data }) => {
             }}
           >
             <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
-    <li className="socialtext"><h3>I&apos;m<br />Social</h3></li>
+    <li className="socialtext"><strong>I&apos;m<br />Social</strong></li>
   <li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
   <li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
   <li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>

@@ -12,7 +12,7 @@ import PostCard from "../components/post-card"
 import Seo from "../components/seo"
 import twlogo from '../../static/assets/twilightscapes-button.jpg'
 import urbanfetishlogo from '../../static/assets/urban-fetish-button.jpg'
-import Gall1 from '../components/gallery1'
+// import Gall1 from '../components/gallery1'
 
 
 const styles = {

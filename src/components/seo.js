@@ -34,7 +34,7 @@ const SEO = ({ title, description, image, article }) => {
       <meta name="image" content={seo.image} />
       <meta
         name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1"
+        content="width=device-width, initial-scale=1, maximum-scale=5"
       />
       {seo.url && <meta property="og:url" content={seo.url} />}
 
@@ -130,7 +130,7 @@ const SEO = ({ title, description, image, article }) => {
     href="/siteimages/apple-splash-1136-640.png"
     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
 
-    
+
     </Helmet>
   )
 }
