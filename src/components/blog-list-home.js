@@ -71,7 +71,7 @@ const PostMaker = ({ data }) => (
       }}
       title="See More Galleries"
     >
-      See more
+      See more Galleries
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
