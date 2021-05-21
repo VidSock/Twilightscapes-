@@ -21,6 +21,11 @@ const MenuItems = [
   },
 
   {
+    path: "/gear",
+    title: "Gear",
+  },
+
+  {
     path: "/contact",
     title: "Contact",
   },

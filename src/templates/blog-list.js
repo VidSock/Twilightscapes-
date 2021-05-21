@@ -10,6 +10,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
+
 import twlogo from '../../static/assets/twilightscapes-button.jpg'
 import urbanfetishlogo from '../../static/assets/urban-fetish-button.jpg'
 // import Gall1 from '../components/gallery1'
@@ -206,26 +207,45 @@ class BlogIndex extends React.Component {
         <Pagination {...props} />
 
 
+        <div
+      className="wrapper"
+      style={{
+        textAlign: "center",
+        marginTop:'20vh',
+      }}
+    >
+<h1>Todd's Other Projects</h1>
+
+    </div>
+
+
+
         <div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:''}}>
 
 
 <div style={{width:'50%', margin:'1rem'}}>
-  <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',lineHeight:'1.7rem'}}>
-   <img className="" src={twlogo} alt="Todd Lambert Night photos" style={{position:'',  maxWidth:'100%', marginBottom:'1rem'}} />
+  <a href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',lineHeight:'1.7rem'}}>
+   
 
-  Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
-  <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
+   <Image className="slider" alt="Todd Lambert Personal Site" filename="toddlambert.jpg" />
+  <br />
+
+  The original. Todd's oldest web project is his personal site. Learn more about Todd, or maybe even hire him. He's a nice guy.  ;-)
+  <h5 style={{textAlign:'center',}}>Visit ToddLambert.com</h5></a>
   </div>
 
 
-
+ 
 
 
   
   <div style={{width:'50%', margin:'1rem'}}>
   <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
  
-  <img className="" src={urbanfetishlogo} alt="Urban Fetish photos" style={{position:'', maxWidth:'100%', marginBottom:'1rem'}} />
+
+
+  <Image className="slider" alt="Urban Fetish photos" filename="urban-fetish-button.jpg" />
+  <br />
   
   Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
   

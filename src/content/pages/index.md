@@ -9,8 +9,10 @@ cta:
   ctaLink: /galleries
 ---
 
-Finding obscure locations and unusual subject matter, Todd Lambert has excelled at capturing rarely seen moments of time. 
+Finding obscure locations and unusual subject matter, Todd Lambert has excelled at capturing rarely seen moments of time.
 
-The night is misunderstood and often feared. 
+As a location scout and avid urban explorer, Todd learned to photograph what he sees at night. 
+
+The night is misunderstood and often feared. But the truest colors come out only at night. There is no better time than nighttime. 
 
 Let Todd's award winning work prove to you that the night is indeed beautiful.
