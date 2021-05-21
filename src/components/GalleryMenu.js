@@ -1,10 +1,13 @@
+/** @jsx jsx */
 import React from 'react'
 import styled from "styled-components";
 import { Link } from 'gatsby'
-import { FaLock } from 'react-icons/fa';
+import { jsx } from "theme-ui"
+// import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
+import {  RiArrowRightSLine } from "react-icons/ri"
 
 const CustomBox = styled.div`
 
@@ -16,11 +19,11 @@ border-radius:10px;
 // border:1px solid #444;
 width:auto;
 }
-.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
+.galmenu li {width:; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; list-style-type:none;}
 
 
 
-.galmenu .galgrad{display: block; padding:10px; border-radius:6px; text-shadow: 1px 1px 1px black; height:100%;}
+.galmenu .galgrad{display: block; padding:0; border-radius:6px; text-shadow: 1px 1px 1px black; height:100%;}
 
 .galmenu .galgrad{
 background: #333; /* Old browsers */
@@ -46,8 +49,8 @@ cursor: pointer;
 .galmenu{
 display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
 }
-.galmenu li{width:18%; margin:0 0 3px 0;}
-.custom-gal li {width:30%; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
+.galmenu li{width:; margin:0 0 3px 0;}
+.custom-gal li {width:; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
 
 .galmenu li:first-child{border:0px solid red !important; width:100% !important;}
 
@@ -100,16 +103,98 @@ const GalleryMenu = () => (
       
       
       <ul className="galmenu custom-gal" style={{marginTop:'5px',}}>
-      <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem 0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 0 0',}}>Themed<br /> Galleries</li>
-      <li className="galmenu-item"><Link to="/favorites" className="galgrad" title="Favorites" id="favorites">Popular<br />Favorites</Link></li>
+
+      <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem 0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 0 0',}}>Themed Galleries</li>
+
+   
       
-      <li className="galmenu-item"><Link to="/milkyway" className="galgrad" title="Milky Way">Milky<br />Way</Link></li>
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/favorites"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Popular Favorites Gallery"
+    >
+      Popular Favorites
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+     
+
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/milkyway"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Milky Way Gallery"
+    >
+      Milky Way
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
       
-      <li className="galmenu-item"><Link to="/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/cars"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="See All Cars Gallery"
+    >
+      Relics of Rust
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+
       
-	  <li className="galmenu-item"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/ghosttowns"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Ghost Towns Gallery"
+    >
+      Ghost Towns
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+
+
+
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/crazygeo"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Crazy Geology Gallery"
+    >
+      Crazy Geology
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+
+
 	  
-      <li className="galmenu-item"><Link to="/crazygeo" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
+      
       
       
       

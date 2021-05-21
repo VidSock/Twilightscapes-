@@ -445,16 +445,14 @@ article img {
 .react-images__view-image{height:100vh !important; object-fit: contain;}
 .fullscreen{height:100vh; width:100%;}
 
-
-
-.moon:before{
-	content: 'Poop';
-	color: #333;
-	font-size: 120%;
-	position:absolute;
-	top:20px;
-	right:20px;
+.galgrad:hover{
+  background: rgb(126,209,234); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
+
+
 
 
 footer{background-color: #000; padding:.1rem 0rem; display:flex; justify-content: center; color:#fff; }
@@ -746,7 +744,7 @@ opacity: 0;
 
 .kenburns-left {
 	-webkit-animation: kenburns-left 4s ease-in-out  alternate-reverse both;
-	        animation: kenburns-left 4s ease-in-out  alternate-reverse both;
+	        animation: kenburns-left s ease-in-out  alternate-reverse both;
 }
 @-webkit-keyframes kenburns-left {
   0% {
