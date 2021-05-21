@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: One Secret To Get Rid Of Blurry Photos
-slug: onesecret
+slug: /onesecret
 date: 2021-05-21 12:29
 description: That mistake is not knowing the minimum shutter speed that is
   needed in order to successfully handhold your camera and come away with a
