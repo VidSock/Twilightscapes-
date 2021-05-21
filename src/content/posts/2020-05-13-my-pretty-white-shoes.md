@@ -10,7 +10,7 @@ featuredImage: /assets/night182.jpg
 ---
 Today I received a comment on a photo that I posted to a Facebook group and it got me **thinking about photo titles**.
 
-> Another car salesman selling the proverbial polished turd
+> Another car salesman selling the proverbial polished turd - lol
 
 The subject came up because someone felt that my image was mistakenly titled or maybe more accurately, unintentionally titled poorly. This same issue or a very similar variant pertaining to how the title is disrespectful has come up in several places the image has been posted before. In fact this image’s title was the basis for a lengthy discussion on the BorrowLens FB group awhile back.
 
