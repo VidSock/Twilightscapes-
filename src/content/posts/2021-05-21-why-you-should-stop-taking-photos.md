@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Why You Should Stop Taking Photos
-slug: stoptakingphotos
+slug: /stoptakingphotos
 date: 2021-05-21 12:36
 description: Beyond the basics of being in the right place at the right time, or
   finding a compelling subject matter to shoot, there is a definite mindset that
