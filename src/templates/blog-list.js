@@ -179,9 +179,9 @@ class BlogIndex extends React.Component {
 
 
 <div style={{width:'50%', margin:'1rem'}}>
-  <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-   <img className="" src={twlogo} alt="Todd Lambert Night photos" style={{position:'',  maxWidth:'100%', left:''}} />
-  <br />
+  <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',lineHeight:'1.7rem'}}>
+   <img className="" src={twlogo} alt="Todd Lambert Night photos" style={{position:'',  maxWidth:'100%', marginBottom:'1rem'}} />
+
   Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
   <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
   </div>
@@ -192,10 +192,10 @@ class BlogIndex extends React.Component {
 
   
   <div style={{width:'50%', margin:'1rem'}}>
-  <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+  <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
  
-  <img className="" src={urbanfetishlogo} alt="Urban Fetish photos" style={{position:'', maxWidth:'100%', left:''}} />
-  <br />
+  <img className="" src={urbanfetishlogo} alt="Urban Fetish photos" style={{position:'', maxWidth:'100%', marginBottom:'1rem'}} />
+  
   Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
   
   <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
