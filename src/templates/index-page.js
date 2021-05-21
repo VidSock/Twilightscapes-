@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-// import Intro2 from '../components/Intro2'
+import Intro2 from '../components/Intro2'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 // import Image from '../components/Image'
 
@@ -67,10 +67,9 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <Seo />
-      <div className="intro">
-      {/* <Intro2 /> */}
-      </div>
-      <div className="home-banner grids col-1 sm-2">
+      
+      <div className="home-banner grids col-1 sm-2" style={{justifyContent:'flex-start'}}>
+
         <div>
           <h1 className="title">{frontmatter.title}</h1>
           <p
@@ -116,15 +115,21 @@ const HomePage = ({ data }) => {
           </div>
         </div>
         <div>
-          {Image ? (
+          {/* {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image"
+              style={{border:'8px solid #ddd', borderBottom:'42px solid #ddd', borderRadius:'3px' }}
             />
           ) : (
             ""
-          )}
+          )} */}
+
+<div className="intro">
+      <Intro2 />
+      </div>
+          
         </div>
       </div>
       <BlogListHome data={posts} />

@@ -2,7 +2,7 @@
   "socialIcons": [
     {
       "icon": "facebook",
-      "url": "https://www.facebook.com/stackrolecom"
+      "url": "https://facebook.com/twilightscapes"
     },
     {
       "icon": "instagram",
@@ -10,15 +10,15 @@
     },
     {
       "icon": "linkedin",
-      "url": "https://in.linkedin.com/company/stackrole"
+      "url": "https://www.linkedin.com/in/toddlambert"
     },
     {
       "icon": "youtube",
-      "url": "https://www.youtube.com/channel/UCc1hYgIP_DzFMMzwLRcbDVQ"
+      "url": "https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ"
     },
     {
-      "icon": "dribbble",
-      "url": "https://dribbble.com/stackrole"
+      "icon": "twiiter",
+      "url": "https://twitter.com/toddlambert"
     }
   ]
 }

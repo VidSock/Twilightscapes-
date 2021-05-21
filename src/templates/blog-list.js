@@ -124,8 +124,16 @@ class BlogIndex extends React.Component {
             "Twilightscapes base gallery page " + currentPage + " of " + numPages
           }
         />
-        <h1>Galleries</h1>
-     
+        
+        <div
+      className="wrapper"
+      style={{
+        textAlign: "center",
+      }}
+    >
+<h1>Galleries</h1>
+
+    </div>
 
         
 
@@ -141,8 +149,8 @@ class BlogIndex extends React.Component {
     }}
   >
      <a href="/favorites"><div >
-      <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+      <Image className="slider" alt="Todd at the VLA" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta">If you're new to Twilightscapes, start here</p></div>
     </article>
 
     <article
@@ -151,9 +159,9 @@ class BlogIndex extends React.Component {
       bg: "cardBg",
     }}
   >
-     <a href="/favorites"><div >
-      <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+     <a href="/cars"><div >
+      <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div></a><div className="post-content"><h2 className="title"><a href="/cars">Relics of Rust</a></h2><p className="meta">Todd's favorite subject matter</p></div>
     </article>
 
 
@@ -163,9 +171,9 @@ class BlogIndex extends React.Component {
       bg: "cardBg",
     }}
   >
-     <a href="/favorites"><div >
-      <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
+     <a href="/milkyway"><div >
+      <Image className="slider" alt="Todd Photographs the Milky Way" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div></a><div className="post-content"><h2 className="title"><a href="/milkyway">Milky Way</a></h2><p className="meta">Shots where the sky steals the show</p></div>
     </article>
 
 

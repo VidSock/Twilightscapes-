@@ -28,6 +28,7 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 
 
 
+
 .intro:before{
 	content: "Galleries: Gallery 1";
 
@@ -104,7 +105,7 @@ const Gal1Page = () => {
 
       
 
-      <div className="" style={{background:'#111',}}>
+      <div className="intro" style={{background:'#111',}}>
       <Gallery
         photos={data.allFile.edges}
       />

@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
-import Image from '../components/Image'
+// import Image from '../components/Image'
 import PostCard from "./post-card"
 
 export default function BlogListHome(props) {
@@ -16,7 +16,7 @@ export default function BlogListHome(props) {
 const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>
-      Latest <strong>Galleries</strong>{" "}
+      Latest in <strong>Galleries</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
@@ -24,7 +24,7 @@ const PostMaker = ({ data }) => (
 
     <div className="grids col-1 sm-2 lg-3">
       
-    <article
+    {/* <article
     className="post-card"
     sx={{
       bg: "cardBg",
@@ -56,7 +56,7 @@ const PostMaker = ({ data }) => (
      <a href="/favorites"><div >
       <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
-    </article>
+    </article> */}
 
 
       {data}

@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: Popular Favorites
-slug: /favorites
+title: Todd gets personal
+slug: /todds-favs
 date: 2020-05-23 23:40
 description: Some of Todd's favorites
 featuredImage: /assets/stellar-sentries.jpg
