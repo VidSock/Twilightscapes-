@@ -1,9 +1,9 @@
 ---
 template: contact-page
 slug: /contact
-title: Get in touch
+title: Contact Twilightscapes
 ---
 
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
+If you’re looking for information about upcoming workshops, please mention the word “workshop” and that will add you to my list, so that I can contact you when I get dates set in your area.
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)
+Please note, all emails provided are secure and I value privacy more than most, so rest assured that I will never divulge or sell your information.

@@ -6,13 +6,13 @@ import React from 'react'
 import Image from '../components/Image'
 
 import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
+
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
 
-import twlogo from '../../static/assets/twilightscapes-button.jpg'
-import urbanfetishlogo from '../../static/assets/urban-fetish-button.jpg'
+
 // import Gall1 from '../components/gallery1'
 
 
@@ -120,7 +120,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page">
         <Seo
-          title={"Gallery — Page " + currentPage + " of " + numPages}
+          title={"Twilightscapes Galleries — Page " + currentPage + " of " + numPages}
           description={
             "Twilightscapes base gallery page " + currentPage + " of " + numPages
           }
@@ -147,22 +147,26 @@ class BlogIndex extends React.Component {
     className="post-card"
     sx={{
       bg: "cardBg",
+      position:'relative'
     }}
   >
      <a href="/favorites"><div >
       <Image className="slider" alt="Todd at the VLA" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/favorites">Popular Favorites</a></h2><p className="meta">If you're new to Twilightscapes, start here</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
 
     <article
     className="post-card"
     sx={{
       bg: "cardBg",
+      position:'relative'
     }}
   >
      <a href="/cars"><div >
       <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/cars">Relics of Rust</a></h2><p className="meta">Todd's favorite subject matter</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
 
 
@@ -170,11 +174,13 @@ class BlogIndex extends React.Component {
     className="post-card"
     sx={{
       bg: "cardBg",
+      position:'relative'
     }}
   >
      <a href="/milkyway"><div >
       <Image className="slider" alt="Todd Photographs the Milky Way" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/milkyway">Milky Way</a></h2><p className="meta">Shots where the sky steals the show</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
 
 
@@ -182,11 +188,13 @@ class BlogIndex extends React.Component {
     className="post-card"
     sx={{
       bg: "cardBg",
+      position:'relative'
     }}
   >
      <a href="/ghosttowns"><div >
       <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/ghosttowns">Ghost Towns</a></h2><p className="meta">The real Old West comes alive at night</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
 
 
@@ -195,11 +203,13 @@ class BlogIndex extends React.Component {
     className="post-card"
     sx={{
       bg: "cardBg",
+      position:'relative'
     }}
   >
      <a href="/crazygeo"><div >
       <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/crazygeo">Crazy Geology</a></h2><p className="meta">The world is awesome - just watch your step!</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
   
       
