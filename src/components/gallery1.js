@@ -29,15 +29,15 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 
 
 
-.intro:before{
-	content: "Galleries: Gallery 1";
+// .intro:before{
+// 	content: "Galleries: Gallery 1";
 
-position:absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-}
+// position:absolute;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+// }
 
 
 

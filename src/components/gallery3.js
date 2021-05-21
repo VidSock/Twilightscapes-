@@ -25,15 +25,15 @@ background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,
 background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
 }
 
-.intro:before{
-	content: "Cars";
+// .intro:before{
+// 	content: "Cars";
 
-position:absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-}
+// position:absolute;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+// }
 
 
 @media (hover: hover) {

@@ -107,9 +107,9 @@ const GalleryMenu = () => (
       
       <li className="galmenu-item"><Link to="/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
       
-	  <li className="galmenu-item"><Link to="/galleries/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
+	  <li className="galmenu-item"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
 	  
-      <li className="galmenu-item"><Link to="/galleries/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
+      <li className="galmenu-item"><Link to="/crazygeo" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
       
       
       

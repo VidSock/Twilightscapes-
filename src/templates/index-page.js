@@ -6,11 +6,31 @@ import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 // import Image from '../components/Image'
-
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
+
+const CustomBox = styled.div`
+
+
+
+.container{padding:0 !important;}
+
+@media (max-width: 48em) {
+	.image-wrap h1, .image-wrap h2, .image-wrap h3  {font-size:300% !important; border:0px solid red !important;}
+	.image-wrap .news-btn{ margin-top:1rem;}
+	.image-wrap .innerpanel{font-size:70% !important;}
+}
+
+@media (min-width: 58em) {
+	.textbox{padding-top:80px !important;}
+}
+
+
+`
+
 
 
 export const pageQuery = graphql`
@@ -65,12 +85,13 @@ const HomePage = ({ data }) => {
     : ""
   
   return (
+    <CustomBox style={{}}>
     <Layout>
       <Seo />
       
-      <div className="home-banner grids col-1 sm-2" style={{justifyContent:'flex-start'}}>
+      <div className="home-banner1 grids col-1 sm-2" style={{justifyContent:'flex-start'}}>
 
-        <div>
+        <div style={{padding:'0 0 0 4%'}}>
           <h1 className="title">{frontmatter.title}</h1>
           <p
             className="tagline"
@@ -132,10 +153,14 @@ const HomePage = ({ data }) => {
           
         </div>
       </div>
-      <BlogListHome data={posts} />
+      <div style={{padding:'0 3%'}}>
+        <BlogListHome data={posts} />
+        </div>
+      
       
 
     </Layout>
+    </CustomBox>
   )
 }
 
