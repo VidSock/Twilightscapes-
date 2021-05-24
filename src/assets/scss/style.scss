@@ -437,6 +437,9 @@ article img {
 @import "lib/prism-default";
 @import "animate.css";
 
+body{overflow-x: hidden;}
+
+
 #sidebarMenu {
   height: 100%;
   position: fixed;
