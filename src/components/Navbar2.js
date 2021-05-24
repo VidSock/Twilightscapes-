@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/tw-logo-white.svg'
+// import logo from '../img/tw-logo-white.svg'
 // import Headroom from "react-headroom"
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { GoArrowUp } from 'react-icons/go';
+// import { GoArrowUp } from 'react-icons/go';
 // import { WiDaySunny } from 'react-icons/wi';
-import Image from './Image'
+// import Image from './Image'
 import Theme from "../components/theme"
 // import PopContact from './PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'

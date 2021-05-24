@@ -5,8 +5,8 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 
 import Image from '../components/Image'
-import ScrollAnimation from 'react-animate-on-scroll'
-import { GiPlainArrow } from 'react-icons/gi'
+// import ScrollAnimation from 'react-animate-on-scroll'
+// import { GiPlainArrow } from 'react-icons/gi'
 
 import styled from 'styled-components'
 

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
+// import React from 'react'
 import styled from "styled-components";
 import { Link } from 'gatsby'
 import { jsx } from "theme-ui"
@@ -143,6 +143,23 @@ const GalleryMenu = () => (
       title="Crazy Geology Gallery"
     >
       Crazy Geology
+      <span className="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
+      </li>
+
+
+      <li className="galmenu-item">
+      <Link
+      className="button"
+      to="/daytime/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="During Daytime Gallery"
+    >
+      During Daytime
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>

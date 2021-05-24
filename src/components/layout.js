@@ -8,8 +8,8 @@ import Navigation from "./Navbar2"
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
-import Theme from "../components/theme"
-import Search from "../components/search"
+// import Theme from "../components/theme"
+// import Search from "../components/search"
 
 const query = graphql`
   query LayoutQuery {

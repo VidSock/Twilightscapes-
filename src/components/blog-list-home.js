@@ -107,6 +107,31 @@ const PostMaker = ({ data }) => (
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div></Link>
     </article>
 
+
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+      position:'relative',
+    }}
+  >
+    <Link
+      className=""
+      to="/cars/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Relics of Rust"
+    >
+<div >
+      <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+</Link>
+    </article>
+
+    
+
       {data}
       
       </div>

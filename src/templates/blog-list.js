@@ -258,6 +258,32 @@ class BlogIndex extends React.Component {
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
         </Link>
     </article>
+
+
+
+
+
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+      position:'relative'
+    }}
+  >
+    <Link
+      className=""
+      to="/daytime/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="During Daytime"
+    >
+     <div >
+      <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div><div className="post-content"><h2 className="title">During Daytime</h2><p className="meta">I'm not actually a vampire!</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        </Link>
+    </article>
   
       
  {posts}</div>
