@@ -65,9 +65,9 @@ const PostMaker = ({ data }) => (
       position: 'relative',
     }}
   >
-     <a href="/favorites"><div >
+     <a href="/favorites/"><div >
       <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta">If you're new here, start here!</p></div>
+        </div></a><div className="post-content"><h2 className="title"><a href="/favorites/" title="Popular Favorites">Popular Favorites</a></h2><p className="meta">If you're new here, start here!</p></div>
         
        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
 
@@ -80,9 +80,9 @@ const PostMaker = ({ data }) => (
       position:'relative'
     }}
   >
-     <a href="/ghosttowns"><div >
+     <a href="/ghosttowns/"><div >
       <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/ghosttowns">Ghost Towns</a></h2><p className="meta">The real Old West comes alive at night</p></div>
+        </div></a><div className="post-content"><h2 className="title"><a href="/ghosttowns/">Ghost Towns</a></h2><p className="meta">The real Old West comes alive at night</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
     </article>
 
@@ -92,7 +92,7 @@ const PostMaker = ({ data }) => (
 
     <Link
       className="button"
-      to="/galleries"
+      to="/galleries/"
       sx={{
         variant: "variants.button",
       }}

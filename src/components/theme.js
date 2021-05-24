@@ -16,7 +16,7 @@ const Theme = () => {
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
           <div sx={themeStyles.modeText}>
-            {colorMode === "default" ? "Dark" : "Light"}
+            {colorMode === "default" ? "Dark (best)" : "Light"}
           </div>
         </div>
       </button>
@@ -46,8 +46,8 @@ const themeStyles = {
     mt: "10px",
   },
   modeText: {
-    fontSize: "16px",
-    display: ["block", "block", "block", "none"],
+    fontSize: "14px",
+    display: ["block", "block", "block", "block"],
     p: " 0 10px",
     mt: "-5px",
     letterSpacing: "1px",

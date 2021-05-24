@@ -96,7 +96,7 @@ const HomePage = ({ data }) => {
           <p
             className="tagline"
             sx={{
-              color: "muted",
+              color: "",
             }}
           >
             {frontmatter.tagline}

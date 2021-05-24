@@ -68,7 +68,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item">
       <Link
       className="button"
-      to="/favorites"
+      to="/favorites/"
       sx={{
         variant: "variants.button",
       }}
@@ -85,7 +85,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item">
       <Link
       className="button"
-      to="/milkyway"
+      to="/milkyway/"
       sx={{
         variant: "variants.button",
       }}
@@ -101,7 +101,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item">
       <Link
       className="button"
-      to="/cars"
+      to="/cars/"
       sx={{
         variant: "variants.button",
       }}
@@ -118,7 +118,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item">
       <Link
       className="button"
-      to="/ghosttowns"
+      to="/ghosttowns/"
       sx={{
         variant: "variants.button",
       }}
@@ -136,7 +136,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item">
       <Link
       className="button"
-      to="/crazygeo"
+      to="/crazygeo/"
       sx={{
         variant: "variants.button",
       }}

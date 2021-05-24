@@ -85,6 +85,12 @@ const Navbar2 = class extends React.Component {
       <Link id="portfolio" className="navbar-item txtshadow" to="/gear/">Gear Talk<span>All the technical details</span></Link>
        </li>
 
+       <li>
+              <Link className="navbar-item txtshadow" to="/contact/">
+                Contact <span>Ask me anything!</span>
+              </Link>
+      </li>
+
        
 
 
