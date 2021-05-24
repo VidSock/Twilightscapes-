@@ -437,7 +437,8 @@ article img {
 @import "lib/prism-default";
 @import "animate.css";
 
-
+.react-images__blanket{z-index:2 !important;}
+.react-images__positioner{z-index:3 !important;}
 
 .gatsby-image-wrapper-constrained{display: block !important;}
 

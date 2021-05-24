@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Logo from "./logo"
-import Navigation from "./navigation"
+import Navigation from "./Navbar2"
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
@@ -33,15 +33,15 @@ const Layout = ({ children, className, props }) => {
       <Header>
         <Logo title={siteTitle} />
         <div sx={layoutStyle.nav}>
-          <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
+          {/* <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
             <Search searchIndex={siteSearchIndex.index} />
-          </div>
+          </div> */}
           <Navigation />
         </div>
-        <div sx={layoutStyle.appearance}>
+        {/* <div sx={layoutStyle.appearance}>
           <Search searchIndex={siteSearchIndex.index} />
           <Theme />
-        </div>
+        </div> */}
       </Header>
       <main className={" container " + className}>{children}</main>
       <Footer />
