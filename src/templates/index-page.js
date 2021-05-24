@@ -91,7 +91,7 @@ const HomePage = ({ data }) => {
       
       <div className="home-banner1 grids col-1 sm-2" style={{justifyContent:'flex-start'}}>
 
-        <div style={{padding:'0 0 0 4%'}}>
+        <div style={{padding:'30px 0 0 3%'}}>
           <h1 className="title">{frontmatter.title}</h1>
           <p
             className="tagline"

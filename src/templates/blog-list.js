@@ -150,10 +150,21 @@ class BlogIndex extends React.Component {
       position:'relative'
     }}
   >
-     <a href="/favorites/"><div >
-      <Image className="slider" alt="Todd at the VLA" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/favorites/">Popular Favorites</a></h2><p className="meta">If you're new to Twilightscapes, start here</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+     <Link
+      className=""
+      to="/favorites/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Popular Favorites"
+    >
+      
+      <div >
+      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+        </div><div className="post-content"><h2 className="title">Popular Favorites</h2><p className="meta">If you're new here, start here!</p></div>
+        
+       <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+</Link>
     </article>
 
     <article
@@ -163,10 +174,19 @@ class BlogIndex extends React.Component {
       position:'relative'
     }}
   >
-     <a href="/cars/"><div >
+    <Link
+      className=""
+      to="/cars/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Relics of Rust"
+    >
+<div >
       <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/cars/">Relics of Rust</a></h2><p className="meta">Todd's favorite subject matter</p></div>
+        </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+</Link>
     </article>
 
 
@@ -177,10 +197,19 @@ class BlogIndex extends React.Component {
       position:'relative'
     }}
   >
-     <a href="/milkyway/"><div >
+    <Link
+      className=""
+      to="/milkyway/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Milky Way"
+    >
+     <div >
       <Image className="slider" alt="Todd Photographs the Milky Way" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/milkyway/">Milky Way</a></h2><p className="meta">Shots where the sky steals the show</p></div>
+        </div><div className="post-content"><h2 className="title">Milky Way</h2><p className="meta">Shots where the sky steals the show</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        </Link>
     </article>
 
 
@@ -191,10 +220,19 @@ class BlogIndex extends React.Component {
       position:'relative'
     }}
   >
-     <a href="/ghosttowns/"><div >
+    <Link
+      className=""
+      to="/ghosttowns/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Ghost Towns"
+    >
+     <div >
       <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/ghosttowns/">Ghost Towns</a></h2><p className="meta">The real Old West comes alive at night</p></div>
+        </div><div className="post-content"><h2 className="title">Ghost Towns</h2><p className="meta">The real Old West comes alive at night</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        </Link>
     </article>
 
 
@@ -206,10 +244,19 @@ class BlogIndex extends React.Component {
       position:'relative'
     }}
   >
-     <a href="/crazygeo/"><div >
+    <Link
+      className=""
+      to="/crazygeo/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Crazy Geology"
+    >
+     <div >
       <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div></a><div className="post-content"><h2 className="title"><a href="/crazygeo/">Crazy Geology</a></h2><p className="meta">The world is awesome - just watch your step!</p></div>
+        </div><div className="post-content"><h2 className="title">Crazy Geology</h2><p className="meta">The world is awesome - just watch your step!</p></div>
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        </Link>
     </article>
   
       

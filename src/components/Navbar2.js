@@ -67,6 +67,11 @@ const Navbar2 = class extends React.Component {
 
     <ul className="sidebarMenuInner">
       {/* <li>Todd Lambert <span>Web Developer</span></li> */}
+      <li>
+              <Link className="navbar-item txtshadow" to="../">
+                Home <span>Return to home</span>
+              </Link>
+      </li>
 
       <li>
               <Link className="navbar-item txtshadow" to="/galleries/">
