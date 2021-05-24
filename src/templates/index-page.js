@@ -148,7 +148,7 @@ const HomePage = ({ data }) => {
           )} */}
 
 <div className="intro">
-      {/* <Intro2 /> */}
+      <Intro2 />
       </div>
           
         </div>
