@@ -5,6 +5,7 @@ import { RiArrowDownLine, RiArrowRightSLine, RiStarLine } from "react-icons/ri"
 import Image from '../components/Image'
 import PostCard from "./post-card"
 
+
 export default function BlogListHome(props) {
   const data = props.data
   const posts = data.edges
@@ -57,6 +58,7 @@ const PostMaker = ({ data }) => (
       <Image className="slider" alt="Todd Mushroom" filename="homepage.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
         </div></a><div className="post-content"><h2 className="title"><a href="/favorites" title="Popular Favorites">Popular Favorites</a></h2><p className="meta"><time>May 23, 2020</time></p></div>
     </article> */}
+
 
 <article
     className="post-card"

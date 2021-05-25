@@ -6,15 +6,28 @@ import React from 'react'
 import Image from '../components/Image'
 
 import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
-
+import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
 
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // import Gall1 from '../components/gallery1'
 
+const properties = {
+  duration: 4000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  easing: 'easeIn',
+  arrows: true,
+
+  prevArrow: <div style={{width: "40px", marginRight: "-10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
+  nextArrow: <div style={{width: "40px", marginLeft: "-10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
+};
 
 const styles = {
   pagination: {
@@ -118,7 +131,7 @@ class BlogIndex extends React.Component {
     }
 
     return (
-      <Layout className="blog-page">
+      <Layout className="blog-page1">
         <Seo
           title={"Twilightscapes Galleries — Page " + currentPage + " of " + numPages}
           description={
@@ -127,12 +140,12 @@ class BlogIndex extends React.Component {
         />
         
         <div
-      className="wrapper"
+      className="wrapper1"
       style={{
         textAlign: "center",
       }}
     >
-<h1>Galleries</h1>
+<h1 style={{padding:'10px', margin:'0'}}>Themed Galleries</h1>
 
     </div>
 
@@ -141,7 +154,310 @@ class BlogIndex extends React.Component {
 
 {/* <Gall1 /> */}
 
-<div className="grids col-1 sm-2 lg-3">
+<br />
+<div style={{ maxHeight:'30%'}}>
+<Slide {...properties} style={{zIndex:'-1'}}>
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+      border:'0px solid blue'
+    }}
+  >
+
+<Link
+      className=""
+      to="/favorites/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Popular Favorites"
+    >
+    
+    <div >
+      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', border:'0px solid green', fontSize:'8vw'}}>Popular Favorites</div>
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/favorties/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+        
+
+</Link>
+</article>
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/cars/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Relics of Rust"
+    >
+    
+    <div >
+    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Relics of Rust</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/cars/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/milkyway/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Milky Way"
+    >
+    
+    <div >
+    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Milky Way</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/milkyway/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+</Link>
+</article>
+
+
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/ghosttowns/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Ghost Towns"
+    >
+    
+    <div >
+    <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Ghost Towns</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/ghosttowns/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/crazygeo/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Crazy Geology"
+    >
+    
+    <div >
+    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Crazy Geology</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/crazygeo/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+
+
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/daytime/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="During Daytime"
+    >
+    
+    <div >
+    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>During Daytime</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/daytime/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+</Slide>
+</div>
+
+
+
+
+
+
+<div className="grids col-1 sm-2 lg-3" style={{display:'none'}}>
       
     <article
     className="post-card"
@@ -284,6 +600,22 @@ class BlogIndex extends React.Component {
         <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
         </Link>
     </article>
+    </div>
+
+
+    <div
+      className="wrapper"
+      style={{
+        textAlign: "center",
+        marginTop:'5vh',
+        clear:'both'
+      }}
+    >
+<h2>Lastest</h2>
+
+    </div>
+    
+    <div className="grids col-1 sm-2 lg-3" style={{clear:'both'}}>
   
       
  {posts}</div>
@@ -294,10 +626,10 @@ class BlogIndex extends React.Component {
       className="wrapper"
       style={{
         textAlign: "center",
-        marginTop:'20vh',
+        marginTop:'10vh',
       }}
     >
-<h1>Todd's Other Projects</h1>
+<h2>Todd's Other Projects</h2>
 
     </div>
 
