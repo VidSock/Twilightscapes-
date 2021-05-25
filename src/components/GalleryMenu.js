@@ -59,9 +59,9 @@ const GalleryMenu = () => (
       
       
       
-      <ul className="galmenu custom-gal" style={{marginTop:'5px',}}>
+      <ul className="galmenu custom-gal" style={{margin:'0 !important',}}>
 
-      <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem 0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 0 0',}}>Themed Galleries</li>
+      <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Themed Galleries</li>
 
    
       
