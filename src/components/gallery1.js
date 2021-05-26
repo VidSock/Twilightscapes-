@@ -1,3 +1,4 @@
+
 import React from "react"
 
 
@@ -16,35 +17,24 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 
 
-
-#gallery1 {
+#galleries {
 	position:relative;
-background: rgb(126,209,234); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: rgb(126,209,234);
+background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
 }
 
-
-
-
-
 // .intro:before{
-// 	content: "Galleries: Gallery 1";
+// 	content: "Cars";
 
 // position:absolute;
 // display: flex;
 // align-items: center;
 // justify-content: center;
-// font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+// font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 // }
 
-
-
-
-@media (max-width: 48rem) {
-.intro:before{font-size:200%;}
-}
 
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
@@ -58,16 +48,12 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 	}
 */
 
-
-
-
-
 `
 
 
-const Galleries = graphql`
-  query Galleries {
-    allFile(filter: { relativeDirectory: { eq: "favorites" } }) {
+const Ghost = graphql`
+  query gallery1 {
+    allFile(filter: { relativeDirectory: { eq: "gallery1" } }) {
       edges {
         node {
           childImageSharp {
@@ -87,42 +73,42 @@ const Galleries = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(Galleries)
+const Gallery1Page = () => {
+  const data = useStaticQuery(Ghost)
   return (
-	  <CustomBox>
+<CustomBox>
     
 
 
 
-      {/* <SlidePanelHome1 /> */}
-      
-      <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
+    {/* <SlidePanelHome1 /> */}
+    
+    <div className="zoomer" style={{zIndex:'1', position:'fixed', display:'flex', justifyContent:'center', width:'100vw'}}>
     <span style={{display:'flex',alignItems:'center', justifyContent:'center', position:'fixed', bottom:'50px', zIndex:'1', textAlign:'center', color:'#fff', fontSize:'100%', fontFamily:'Hammersmith One', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', }}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</span>
 </div>
 
 
 
-      
+    
 
-      <div className="intro" style={{background:'#111',}}>
-      <Gallery
-        photos={data.allFile.edges}
-      />
-      </div>
+    <div className="intro" style={{background:'#111',}}>
+    <Gallery
+      photos={data.allFile.edges}
+    />
+    </div>
 
+
+  
 
     
 
-      
 
-
-      
-      
-      
     
-    </CustomBox>
+    
+    
+  
+  </CustomBox>
   )
 }
 
-export default Gal1Page
+export default Gallery1Page

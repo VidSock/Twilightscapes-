@@ -51,9 +51,9 @@ background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145
 `
 
 
-const Crazy = graphql`
-  query Day {
-    allFile(filter: { relativeDirectory: { eq: "daytime" } }) {
+const Ghost = graphql`
+  query gal6 {
+    allFile(filter: { relativeDirectory: { eq: "gallery6" } }) {
       edges {
         node {
           childImageSharp {
@@ -73,8 +73,8 @@ const Crazy = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(Crazy)
+const Gal6Page = () => {
+  const data = useStaticQuery(Ghost)
   return (
 <CustomBox>
     
@@ -111,4 +111,4 @@ const Gal1Page = () => {
   )
 }
 
-export default Gal1Page
+export default Gal6Page

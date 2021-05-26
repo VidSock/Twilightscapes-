@@ -1,7 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 
-import Gall1 from '../components/gallery3'
+import Gall1 from '../components/milkyway'
 
 import Seo from "../components/seo"
 import Layout from "../components/layout"

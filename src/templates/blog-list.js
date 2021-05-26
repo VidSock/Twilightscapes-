@@ -7,9 +7,11 @@ import Image from '../components/Image'
 
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
+import { FaLock } from 'react-icons/fa';
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
+
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -21,7 +23,7 @@ const properties = {
   duration: 4000,
   transitionDuration: 500,
   infinite: true,
-  indicators: true,
+  indicators: false,
   easing: 'easeIn',
   arrows: true,
 
@@ -452,6 +454,30 @@ class BlogIndex extends React.Component {
 </Slide>
 </div>
 
+<br />
+{/* <h4 style={{display:'block', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4> */}
+<ul className="galmenu">
+<li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Bonus Galleries</li>
+      <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>
+      <li className="galmenu-item"><Link to="/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
+      <li className="galmenu-item"><Link to="/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
+      <li className="galmenu-item"><Link to="/gallery4/" className="button" sx={{variant: "variants.button",}}  title="Gallery 4">IV</Link></li>
+      <li className="galmenu-item"><Link to="/gallery5/" className="button" sx={{variant: "variants.button",}}  title="Gallery 5">V</Link></li>
+      <li className="galmenu-item"><Link to="/gallery6/" className="button" sx={{variant: "variants.button",}}  title="Gallery 6">VI</Link></li>
+      <li className="galmenu-item"><Link to="/gallery7/" className="button" sx={{variant: "variants.button",}}  title="Gallery 7">VII</Link></li>
+      <li className="galmenu-item"><Link to="/gallery8/" className="button" sx={{variant: "variants.button",}}  title="Gallery 8">VIII</Link></li>
+      <li className="galmenu-item"><Link to="/gallery9/" className="button" sx={{variant: "variants.button",}}  title="Gallery 9">IV</Link></li>
+      {/* <li className="galmenu-item1"><Link to="/gallery10/"  title="Gallery 10">X</Link></li> */}
+      
+      {/* <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
+      
+      
+      {/* <li className="galmenu-item has-app" has-app><Link to="/vault/gallery8"  title="Gallery 8" has-app>VIII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery9"  title="Gallery 9">IX</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10"  title="Gallery 10">X</Link></li> */}
+      </ul>
 
 
 
@@ -611,7 +637,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h2>Lastest</h2>
+<h2>Lastest &amp; Greatest</h2>
 
     </div>
     

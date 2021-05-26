@@ -51,9 +51,9 @@ background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145
 `
 
 
-const Crazy = graphql`
-  query Crazy {
-    allFile(filter: { relativeDirectory: { eq: "crazygeo" } }) {
+const Ghost = graphql`
+  query gal5 {
+    allFile(filter: { relativeDirectory: { eq: "gallery5" } }) {
       edges {
         node {
           childImageSharp {
@@ -73,8 +73,8 @@ const Crazy = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(Crazy)
+const Gal5Page = () => {
+  const data = useStaticQuery(Ghost)
   return (
 <CustomBox>
     
@@ -111,4 +111,4 @@ const Gal1Page = () => {
   )
 }
 
-export default Gal1Page
+export default Gal5Page

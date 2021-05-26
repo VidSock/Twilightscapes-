@@ -582,10 +582,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 blockquote {
   // background: #f9f9f9;
   // border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  margin: 2.5em 10px;
   padding: 0.5em 10px;
   // quotes: "\201C""\201D""\2018""\2019";
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   quotes: "“" "”" "‘" "’";
   position:relative;
   text-align: justify;
@@ -594,15 +594,17 @@ blockquote:before {
   // color: #ccc;
   quotes: "“" "”" "‘" "’";
   content: open-quote;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 0.1em;
-  // margin-right: 0.25em;
+   margin-left: -.25em;
   vertical-align: -0.4em;
+  position:absolute;
+
 }
 blockquote:after {
   // color: #ccc;
   content: close-quote;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;

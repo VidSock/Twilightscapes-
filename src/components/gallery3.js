@@ -51,9 +51,9 @@ background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145
 `
 
 
-const Milky = graphql`
-  query Milky {
-    allFile(filter: { relativeDirectory: { eq: "milky-way" } }) {
+const Ghost = graphql`
+  query gal3 {
+    allFile(filter: { relativeDirectory: { eq: "gallery3" } }) {
       edges {
         node {
           childImageSharp {
@@ -73,8 +73,8 @@ const Milky = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(Milky)
+const Gal3Page = () => {
+  const data = useStaticQuery(Ghost)
   return (
 <CustomBox>
     
@@ -111,4 +111,4 @@ const Gal1Page = () => {
   )
 }
 
-export default Gal1Page
+export default Gal3Page

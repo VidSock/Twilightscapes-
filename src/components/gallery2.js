@@ -51,9 +51,9 @@ background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145
 `
 
 
-const Cars = graphql`
-  query Cars {
-    allFile(filter: { relativeDirectory: { eq: "cars" } }) {
+const Ghost = graphql`
+  query gal2 {
+    allFile(filter: { relativeDirectory: { eq: "gallery2" } }) {
       edges {
         node {
           childImageSharp {
@@ -73,8 +73,8 @@ const Cars = graphql`
   }
 `
 
-const Gal1Page = () => {
-  const data = useStaticQuery(Cars)
+const Gal2Page = () => {
+  const data = useStaticQuery(Ghost)
   return (
 <CustomBox>
     
@@ -111,4 +111,4 @@ const Gal1Page = () => {
   )
 }
 
-export default Gal1Page
+export default Gal2Page
