@@ -16,6 +16,9 @@ As I said, this is a very common mistake and one that people don’t think much 
 
 ### Wrong.
 
+<!-- `youtube: https://youtu.be/ESGJ42zshL8` -->
+
+
 Today’s cameras as advanced and technologically equipped as they are, cannot make the right choice when it comes to shutter speed.
 
 They are designed to force your exposure settings to a neutral gray color tone. Essentially your camera is constantly trying to minimize highs and lows or in other words, brights and darks, into an equal distribution which it bases off the color gray.

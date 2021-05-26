@@ -184,7 +184,7 @@ class BlogIndex extends React.Component {
 
   <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
     <Link
-            to="/favorties/"
+            to="/favorites/"
             className="button box-shadow"
             sx={{
               variant: "variants.button",

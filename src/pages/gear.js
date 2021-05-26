@@ -105,7 +105,7 @@ const gear = () => (
                 Todd&apos;s Gear
               </h2>
               
-<p>I’ve shot many digital cameraS and used a lot of equipment over the years but while some of these tools I will have for the rest of my life. I've gotten tired of chasing the latest thing. This is a list of what I use and enjoy.</p>
+<p>I’ve shot many digital cameraS and used a lot of equipment over the years but some of these tools I will have for the rest of my life. I've gotten tired of chasing the latest thing. This is a list of what I use and enjoy.</p>
 
 
 <h3>Cameras:</h3>
