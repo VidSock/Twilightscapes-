@@ -588,6 +588,7 @@ blockquote {
   font-family: Arial, Helvetica, sans-serif;
   quotes: "“" "”" "‘" "’";
   position:relative;
+  text-align: justify;
 }
 blockquote:before {
   // color: #ccc;
@@ -595,7 +596,7 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  // margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 blockquote:after {

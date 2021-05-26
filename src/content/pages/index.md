@@ -13,7 +13,7 @@ Finding obscure locations and unusual subject matter, Todd Lambert has excelled 
 
 As a location scout and avid urban explorer, Todd learned to photograph what he sees at night. 
 
-> The night is misunderstood and often feared. But the truest colors come out only at night. There is no better time than nighttime. 
- – Todd Lambert
+> The night is misunderstood and often feared. But the truest colors come out only at night. There is no better time than nighttime.    
+ – **Todd Lambert**
 
 Let Todd's award winning work prove to you that the night is indeed beautiful.
