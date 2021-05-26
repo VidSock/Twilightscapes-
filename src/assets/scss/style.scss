@@ -635,7 +635,7 @@ blockquote p {
 
 
   .galmenu{
-    display: flex; justify-content: space-around; align-items: center; margin:0 3%;
+    display: flex; align-items: center; margin:0 3% 0 3%; justify-content: center;
     background:#111;
     // padding:4px 4px;
     border-radius:10px;

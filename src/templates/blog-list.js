@@ -147,7 +147,7 @@ class BlogIndex extends React.Component {
         textAlign: "center",
       }}
     >
-<h1 style={{padding:'10px', margin:'0'}}>Themed Galleries</h1>
+<h1 style={{padding:'10px 0 0 0', margin:'0'}}>Themed Galleries</h1>
 
     </div>
 
@@ -652,7 +652,7 @@ class BlogIndex extends React.Component {
       className="wrapper"
       style={{
         textAlign: "center",
-        marginTop:'10vh',
+        marginTop:'1vh',
       }}
     >
 <h2>Todd's Other Projects</h2>
