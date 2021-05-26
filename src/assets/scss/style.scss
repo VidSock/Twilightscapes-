@@ -594,7 +594,7 @@ blockquote:before {
   // color: #ccc;
   quotes: "“" "”" "‘" "’";
   content: open-quote;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 0.1em;
    margin-left: -.25em;
   vertical-align: -0.4em;
@@ -604,7 +604,7 @@ blockquote:before {
 blockquote:after {
   // color: #ccc;
   content: close-quote;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;

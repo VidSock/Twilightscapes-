@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Night Photography
 tagline: Todd Lambert - a pioneer in night photography
-featuredImage: /assets/todd2.jpg
+featuredImage: /assets/night316.jpg
 cta:
   ctaText: View the work
   ctaLink: /galleries/

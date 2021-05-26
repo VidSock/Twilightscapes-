@@ -1,10 +1,29 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
-// import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Icons from "../util/socialmedia.json"
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
+import {
+  RiFacebookBoxFill,
+  RiTwitterFill,
+  RiLinkedinBoxFill,
+  RiYoutubeFill,
+  RiInstagramFill,
+  RiRssFill,
+  RiGithubFill,
+  RiTelegramFill,
+  RiPinterestFill,
+  RiSnapchatFill,
+  RiSkypeFill,
+  RiDribbbleFill,
+  RiMediumFill,
+  RiBehanceFill,
+} from "react-icons/ri"
+import { FaWordpress, FaVk } from "react-icons/fa"
 // import Image from '../components/Image'
 import styled from "styled-components"
 
@@ -43,7 +62,7 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
+            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 900)
           }
         }
         cta {
@@ -67,7 +86,7 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 250)
               }
             }
           }
@@ -83,15 +102,49 @@ const HomePage = ({ data }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
-  
+    const sIcons = Icons.socialIcons.map((icons, index) => {
+      return (
+        <div key={"social icons" + index}>
+          
+          {icons.icon === "facebook" ? (
+            <a className="social"  href={icons.url} alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a>
+          ) : (
+            ""
+          )}
+          {icons.icon === "twitter" ? (
+           <a className="social" href={icons.url} alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a>
+          ) : (
+            ""
+          )}
+          {icons.icon === "linkedin" ? (
+            <a className="social" href={icons.url} alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a>
+          ) : (
+            ""
+          )}
+          {icons.icon === "youtube" ? (
+            <a className="social" href={icons.url} alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a>
+          ) : (
+            ""
+          )}
+          {icons.icon === "instagram" ? (
+            <a className="social" href={icons.url} alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a>
+          ) : (
+            ""
+          )}
+      
+        </div>
+      )
+    })
   return (
     <CustomBox style={{}}>
     <Layout>
       <Seo />
       
-      <div className="home-banner1 grids col-1 sm-2" style={{justifyContent:'flex-start'}}>
+      <div className="home-banner1 grids col-1 sm-2" style={{justifyContent:'', position:'relative'}}>
 
-        <div style={{padding:'30px 2% 0 4%'}}>
+        <div style={{padding:'30px 2% 0 4%', border:'0px solid yellow'}}>
+
+
           <h1 className="title">{frontmatter.title}</h1>
           <p
             className="tagline"
@@ -101,10 +154,12 @@ const HomePage = ({ data }) => {
           >
             {frontmatter.tagline}
           </p>
+
           <div
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
-          />
+          ></div>
+
           <Link
             to={frontmatter.cta.ctaLink}
             className="button"
@@ -112,47 +167,154 @@ const HomePage = ({ data }) => {
               variant: "variants.button",
             }}
           >
+
             {frontmatter.cta.ctaText}
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
           </Link>
+
+          
           <div
             className="social-icons"
             sx={{
               variant: "variants.socialIcons",
+              justifyContent:'center',
             }}
           >
-            <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
-    <li className="socialtext"><strong>I&apos;m<br />Social</strong></li>
-  <li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
-  <li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
-  <li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
-  <li><a className="social" href="https://www.instagram.com/twilightscapes" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li>
-  <li style={{display: 'none',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
-  
-  <li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
-  </ul>
+            <div style={{fontSize:'40%', textAlign:'center', marginRight:'1rem'}}><strong>I'm<br />Social</strong></div>
+            {sIcons}
           </div>
-        </div>
-        <div>
-          {/* {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-              style={{border:'8px solid #ddd', borderBottom:'42px solid #ddd', borderRadius:'3px' }}
-            />
-          ) : (
-            ""
-          )} */}
-
-<div className="intro">
-      <Intro2 />
-      </div>
           
         </div>
-      </div>
+
+
+
+
+
+
+
+
+    
+
+
+    
+  
+<div style={{ border:'0px solid pink', position:'relative', overflow:'hidden', width:'', height:'100vh'}}>
+
+  {Image ? (
+        <GatsbyImage
+          image={Image}
+          alt={frontmatter.title + " - Featured image"}
+          className="featured-image kenburns-right"
+          style={{height:'100vh', backgroundSize:'cover',}}
+        />
+
+        
+      ) : (
+        ""
+      )}
+
+      
+<div style={{position:'absolute', height:'', top:'0', right:'0'}}>
+<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'60px', right:'10%', border:'0px solid yellow'}}>
+        <h2
+          className="boom normal txtshadow-header hit-the-floor"
+          style={{
+            color: '#fff',
+            fontSize: '6vw',
+           position: 'relative',
+//            top: '100px',
+//            right: '1%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'right', 
+            float: 'none',
+            margin:'0',
+            padding:'0',
+          }}
+        >
+          Follow me
+        </h2>
+        </ScrollAnimation>
+        
+        
+  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'6vh', right:'10%', border:'0px solid yellow'}}>
+        <h2
+          className="boom narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'4vw',
+           color: 'white',
+           position: 'relative',
+            textAlign: 'right', 
+            margin:'0',
+            padding:'0',
+          }}
+        >
+          into the
+        </h2>
+        </ScrollAnimation>
+        
+        
+  <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'6vh', right:'10%', border:'0px solid yellow'}}>
+        <h2
+          className="boom narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'7vw',
+           color: 'white',
+           position: 'relative',
+//            top: '230px',
+            textAlign: 'right',
+            textTransform: 'uppercase', 
+            margin:'0',
+            padding:'0',
+          }}
+        >
+          Night
+        </h2>
+        </ScrollAnimation>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+
+          
+ 
+
+
+
+
+
+
+  
+
+
+
+  
+
+          
+          
+
+
+
+
+
+
+
+
+
+
       <div style={{padding:'0 3%'}}>
         <BlogListHome data={posts} />
         </div>
