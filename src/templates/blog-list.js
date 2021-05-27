@@ -39,10 +39,9 @@ article{justify-content:center;}
 position:absolute;
 right:0;
 top:10px;
-width:75% !important;
+width:60% !important;
 height: auto !important;
-font-size:40px !important;
-padding:5px !important;
+font-size:30px !important;
 }
 
 
@@ -84,11 +83,20 @@ padding:5px !important;
       .signbox{
         display:flex;
         flex-direction:column;
-        align-items:center;
-        width:100%;
+        width:70% !important;
         height:auto !important;
-        padding:10px !important;
+        // padding:10px 10px 10px 10px !important;
+        // margin-left:10px !important;
         font-size:20px !important;
+        text-align:center !important;
+      }
+      .signbox .button{
+        background:transparent !important;
+        // padding:0 !important;
+        width:auto !important;
+        text-align:right !important;
+        padding-right:0px !important;
+        box-shadow:none !important;
       }
       .signbox input{margin-bottom:10px; margin-right:0;}
 
@@ -276,9 +284,9 @@ class BlogIndex extends React.Component {
 
     <Link
             to="/favorites/"
-            className="button box-shadow"
+            className="button"
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
@@ -335,9 +343,9 @@ class BlogIndex extends React.Component {
 <div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/cars/"
-            className="button box-shadow"
+            className="button"
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
@@ -384,14 +392,14 @@ class BlogIndex extends React.Component {
 
     
 
-    <div className="signbox" style={{background:'transparent', margin:'0 ', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
 <div style={{width:'100%', border:'0px solid green', fontSize:''}}>Milky Way</div>
 <div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/milkyway/"
-            className="button box-shadow"
+            className="button"
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
@@ -439,9 +447,9 @@ class BlogIndex extends React.Component {
 <div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/ghosttowns/"
-            className="button box-shadow"
+            className="button"
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
@@ -491,9 +499,9 @@ class BlogIndex extends React.Component {
 <div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/crazygeo/"
-            className="button box-shadow"
+            className="button"
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
@@ -544,9 +552,9 @@ class BlogIndex extends React.Component {
 <div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/daylight/"
-            className="button box-shadow"
+            className="button "
             sx={{
-              variant: "variants.button",
+              // variant: "variants.button",
             }}
           >
        View the Gallery
