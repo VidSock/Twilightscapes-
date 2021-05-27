@@ -9,7 +9,15 @@ import styled from "styled-components";
 const CustomBox = styled.div`
 
 
-
+.newsletter{position:relative;}
+.newsletter:before{
+  content: ;
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:-1;
+  filter: blur(20px) grayscale(20%);
+}
 
 `
 
@@ -26,16 +34,16 @@ const NewsletterPage = () => (
           data-netlify="true"
           data-netlify-honeypot="bot-field">
 
-            <div style={{background:'#333', margin:'0 20px', padding:'10px 0', borderRadius:'12px'}}>
+            <div className="newsletter" style={{background:'transparent', margin:'0 20px', padding:'10px', borderRadius:'12px',}}>
 
           <input type="hidden" name="form-name" value="news" />
 
 
             <label style={{color:'#fff'}}>
-              Join the Night Newsletter - (it's free and no SPAM!)<br /><br />
+              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>Newsletter - (it's free and no SPAM!)</span><br /><br />
               <input type="email" name="email" required={true}
                       placeholder="your@email.com"
-                      style={{margin: '0 1rem 0 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #000', borderRadius:'8px'}}/>
+                      style={{margin: '0 1rem 0 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #666', borderRadius:'8px'}}/>
             </label>
 
 
