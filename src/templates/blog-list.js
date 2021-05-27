@@ -40,7 +40,9 @@ position:absolute;
 right:0;
 top:10px;
 width:75% !important;
-height: 25% !important;
+height: auto !important;
+font-size:40px !important;
+padding:5px !important;
 }
 
 
@@ -84,8 +86,9 @@ height: 25% !important;
         flex-direction:column;
         align-items:center;
         width:100%;
-        // height:auto !important;
-        // padding:10px !important;
+        height:auto !important;
+        padding:10px !important;
+        font-size:20px !important;
       }
       .signbox input{margin-bottom:10px; margin-right:0;}
 
@@ -265,8 +268,8 @@ class BlogIndex extends React.Component {
 
 
     <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Popular Favorites</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>Popular Favorites</div>
+<div style={{ width:'100%', fontSize:''}}>
    
     
 
@@ -328,8 +331,8 @@ class BlogIndex extends React.Component {
 
 
 <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Relics of Rust</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>Relics of Rust</div>
+<div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/cars/"
             className="button box-shadow"
@@ -381,9 +384,9 @@ class BlogIndex extends React.Component {
 
     
 
-    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Milky Way</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+    <div className="signbox" style={{background:'transparent', margin:'0 ', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>Milky Way</div>
+<div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/milkyway/"
             className="button box-shadow"
@@ -432,8 +435,8 @@ class BlogIndex extends React.Component {
     
 
     <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Ghost Towns</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>Ghost Towns</div>
+<div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/ghosttowns/"
             className="button box-shadow"
@@ -484,8 +487,8 @@ class BlogIndex extends React.Component {
     
 
     <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Crazy Geology</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>Crazy Geology</div>
+<div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/crazygeo/"
             className="button box-shadow"
@@ -537,8 +540,8 @@ class BlogIndex extends React.Component {
     
 
     <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>During Daylight</div>
-<div style={{ width:'100%', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:''}}>During Daylight</div>
+<div style={{ width:'100%', fontSize:''}}>
     <Link
             to="/daylight/"
             className="button box-shadow"
