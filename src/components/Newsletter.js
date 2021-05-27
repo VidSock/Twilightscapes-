@@ -31,15 +31,14 @@ input: {
 
 `
 
-const Newsletter = ({ data }) => {
+const Newsletter = () => {
 
 
   return (
     <CustomBox style={{}}>
 
 
-<div>
-        <form
+<form
           className="news-form"
           action="/thanks"
           name="news"
@@ -75,7 +74,6 @@ const Newsletter = ({ data }) => {
 
 
         </form>
-</div>
       </CustomBox>
   )
 }
