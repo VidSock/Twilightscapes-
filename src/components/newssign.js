@@ -45,6 +45,7 @@ const NewsletterPage = () => (
               className="button"
               sx={{
                 variant: "variants.button",
+                cursor:'pointer'
               }}
               type="submit"
             >
@@ -55,7 +56,7 @@ const NewsletterPage = () => (
             </button>
             
             <div style={{fontSize: '70%', padding: '0px 3%', margin:'10px 0', textAlign: 'center', color:'#ccc'}}>
-            <Link to="/privacy/" className="" style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline', color:'inherit',}}>privacy policy</Link>
+            <Link to="/privacy/" className="" style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline',}}>privacy policy</Link>
               
 
                 </div>
