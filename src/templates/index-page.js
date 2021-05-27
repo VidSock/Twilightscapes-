@@ -158,13 +158,14 @@ const HomePage = ({ data }) => {
       )}
 
       
-<div style={{position:'absolute', height:'', width:'100%', top:'0', right:'0',}}>
-<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
+<div style={{position:'absolute', height:'', width:'100%', top:'60px', right:'0',}}>
+
+<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid yellow'}}>
         <h2
           className="boom normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
-            fontSize: '6vw',
+            fontSize: '80px',
            position: 'relative',
 //            top: '100px',
 //            right: '1%',
@@ -180,11 +181,11 @@ const HomePage = ({ data }) => {
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red'}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
-           fontSize:'4vw',
+           fontSize:'50px',
            color: 'white',
            position: 'relative',
             textAlign: 'right', 
@@ -197,11 +198,11 @@ const HomePage = ({ data }) => {
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
+  <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue'}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
-           fontSize:'7vw',
+           fontSize:'100px',
            color: 'white',
            position: 'relative',
 //            top: '230px',
