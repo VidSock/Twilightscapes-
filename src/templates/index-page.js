@@ -12,7 +12,7 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 
-import Newsletter from "../components/newsletter"
+import Newsignup from "../components/newssign"
 
 const CustomBox = styled.div`
 
@@ -221,7 +221,7 @@ const HomePage = ({ data }) => {
         <ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'250px', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
 
 
-          <Newsletter />
+          <Newsignup />
 </ScrollAnimation>
 
 

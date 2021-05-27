@@ -5,14 +5,19 @@ import { RiSendPlane2Line } from "react-icons/ri"
 
 // import Layout from "./layout"
 // import Seo from "./seo"
+import styled from "styled-components";
+const CustomBox = styled.div`
 
 
+
+
+`
 
 
 const NewsletterPage = () => (
 
 
-
+<CustomBox style={{}}>
 <form
           className="news-form"
           action="/thanks"
@@ -51,7 +56,8 @@ const NewsletterPage = () => (
 </div>
 
         </form>
-
-  )
+</CustomBox>
+  
+)
 
   export default NewsletterPage
