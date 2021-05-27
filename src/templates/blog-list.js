@@ -82,13 +82,14 @@ font-size:30px !important;
 
       .signbox{
         display:flex;
-        flex-direction:column;
-        width:70% !important;
+        flex-direction:row;
+        width:96% !important;
         height:auto !important;
         // padding:10px 10px 10px 10px !important;
-        // margin-left:10px !important;
+        margin-right:10px !important;
         font-size:20px !important;
         text-align:center !important;
+        border-radius:12px 0 0 12px !important; 
       }
       .signbox .button{
         background:transparent !important;
