@@ -92,8 +92,8 @@ const NewsletterPage = () => (
               </span>
             </button>
             
-            <div style={{fontSize: '70%', padding: '0px 3%', margin:'10px 0', textAlign: 'center', color:'#ccc'}}>
-            <Link to="/privacy/" className="" style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline',}}>privacy policy</Link>
+            <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
+            <Link to="/privacy/" className="" style={{textAlign: 'center', paddingTop: '4px', paddingBottom: '4px', textDecoration: 'underline',}}>privacy policy</Link>
               
 
                 </div>
