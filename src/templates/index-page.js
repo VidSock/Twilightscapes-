@@ -218,7 +218,7 @@ const HomePage = ({ data }) => {
 
 
 
-        <ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'250px', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
+        <ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'150px', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
 
 
           <Newsignup />
