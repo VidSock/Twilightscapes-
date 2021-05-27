@@ -11,6 +11,12 @@ const CustomBox = styled.div`
 
 .newsletter{position:relative;}
 
+.signbox{
+  display:flex;
+  justify-content: space-around;
+  align-items:baseline;
+}
+
 .blocker{
   content: ;
   width:100%;
@@ -44,6 +50,19 @@ const CustomBox = styled.div`
     
     }
 
+
+    @media (max-width: 58em) {
+
+      .signbox{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+      }
+
+    }
+
+
 }
 
 `
@@ -68,12 +87,15 @@ const NewsletterPage = () => (
           <input type="hidden" name="form-name" value="news" />
 
 <br />
+
             <label style={{color:'#fff'}}>
-              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>night photography newsletter - (it's free!)</span><br /><br />
-              <input type="email" name="email" required={true}
+              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>night photography newsletter - (it's free!)</span><br /><br /></label>
+
+             <div className="signbox" style={{display:''}}>
+               <input type="email" name="email" required={true}
                       placeholder="your@email.com"
-                      style={{margin: '0 1rem 1rem 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #666', borderRadius:'8px'}}/>
-            </label>
+                      style={{margin: '0 0 1rem 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #666', borderRadius:'8px'}}/>
+            
 
 
   
@@ -91,7 +113,11 @@ const NewsletterPage = () => (
                 <RiSendPlane2Line />
               </span>
             </button>
-            
+
+
+            </div>
+
+
             <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
             <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
               
