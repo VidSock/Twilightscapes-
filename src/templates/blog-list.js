@@ -7,7 +7,7 @@ import Image from '../components/Image'
 
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
-import { FaLock } from 'react-icons/fa';
+// import { FaLock } from 'react-icons/fa';
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
@@ -15,7 +15,7 @@ import Seo from "../components/seo"
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 // import Gall1 from '../components/gallery1'
 

@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { RiArrowRightSLine } from "react-icons/ri"
-import Intro2 from '../components/Intro2'
+// import { RiArrowRightSLine } from "react-icons/ri"
+// import Intro2 from '../components/Intro2'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Social from "../components/social"
 import styled from "styled-components"
@@ -160,12 +160,12 @@ const HomePage = ({ data }) => {
       
 <div style={{position:'absolute', height:'', width:'100%', top:'60px', right:'0',}}>
 
-<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid yellow'}}>
+<ScrollAnimation animateIn="bounceInDown" delay={1350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid yellow'}}>
         <h2
           className="boom normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
-            fontSize: '80px',
+            fontSize: '60px',
            position: 'relative',
 //            top: '100px',
 //            right: '1%',
@@ -181,11 +181,11 @@ const HomePage = ({ data }) => {
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red'}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red'}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
-           fontSize:'50px',
+           fontSize:'40px',
            color: 'white',
            position: 'relative',
             textAlign: 'right', 
@@ -202,7 +202,7 @@ const HomePage = ({ data }) => {
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
-           fontSize:'100px',
+           fontSize:'80px',
            color: 'white',
            position: 'relative',
 //            top: '230px',
