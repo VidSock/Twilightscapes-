@@ -111,7 +111,7 @@ const HomePage = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
 
-          <Link
+          {/* <Link
             to={frontmatter.cta.ctaLink}
             className="button"
             sx={{
@@ -123,7 +123,7 @@ const HomePage = ({ data }) => {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link> */}
 
           
 <Social />
@@ -219,19 +219,6 @@ const HomePage = ({ data }) => {
 
         <ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'250px', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
 
-{/* <Link
-            to="/galleries/"
-            className="button"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-
-            {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link> */}
 
           <Newsletter />
 </ScrollAnimation>
