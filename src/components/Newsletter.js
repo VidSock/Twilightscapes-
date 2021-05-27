@@ -5,37 +5,12 @@ import { RiSendPlane2Line } from "react-icons/ri"
 
 // import Layout from "./layout"
 // import Seo from "./seo"
-import styled from "styled-components"
-
-const CustomBox = styled.div`
-
-input: {
-  border: 6px solid;
-  borderColor: inputBorder;
-  bg: inputBackground;
-  outline: none;
-}
-
-.container{padding:0 !important;}
-
-@media (max-width: 48em) {
-	.image-wrap h1, .image-wrap h2, .image-wrap h3  {font-size:300% !important; border:0px solid red !important;}
-	.image-wrap .news-btn{ margin-top:1rem;}
-	.image-wrap .innerpanel{font-size:70% !important;}
-}
-
-@media (min-width: 58em) {
-	.textbox{padding-top:80px !important;}
-}
 
 
-`
-
-const Newsletter = () => {
 
 
-  return (
-    <CustomBox style={{}}>
+const NewsletterPage = () => (
+
 
 
 <form
@@ -53,7 +28,7 @@ const Newsletter = () => {
               Join the Night Newsletter - (it's free and no SPAM!)<br />
               <input type="email" name="email" required={false}
                       placeholder="your@email.com"
-                      style={{margin: '0 1rem 0 0', padding:'.6rem .8rem', width: '50%',}}/>
+                      style={{margin: '0 1rem 0 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #000', borderRadius:'8px'}}/>
             </label>
 
 
@@ -74,10 +49,7 @@ const Newsletter = () => {
 
 
         </form>
-      </CustomBox>
+
   )
-}
 
-export default Newsletter
-
-
+  export default NewsletterPage
