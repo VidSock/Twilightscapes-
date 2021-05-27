@@ -11,6 +11,10 @@ const CustomBox = styled.div`
 
 .newsletter{position:relative;}
 
+// input::placeholder {
+//   color: #111;
+// }
+
 .signbox{
   display:flex;
   justify-content: space-around;
@@ -94,7 +98,7 @@ const NewsletterPage = () => (
              <div className="signbox" style={{display:''}}>
                <input type="email" name="email" required={true}
                       placeholder="your@email.com"
-                      style={{margin: '0 0 1rem 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #666', borderRadius:'8px'}}/>
+                      style={{margin: '0 0 1rem 0', padding:'.8rem', width: '50%', border:'2px solid #666', background:'rgb(51, 51, 51)', borderRadius:'8px'}}/>
             
 
 
