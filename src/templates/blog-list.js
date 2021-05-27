@@ -30,13 +30,17 @@ const CustomBox = styled.div`
 //   color: #111;
 // }
 
+article{justify-content:center;}
+
 .signbox{
   display:flex;
   justify-content: center;
   align-items:baseline;
 position:absolute;
-right:5%;
-top:10%;
+right:0;
+top:10px;
+width:75% !important;
+height: 25% !important;
 }
 
 
@@ -80,6 +84,8 @@ top:10%;
         flex-direction:column;
         align-items:center;
         width:100%;
+        // height:auto !important;
+        // padding:10px !important;
       }
       .signbox input{margin-bottom:10px; margin-right:0;}
 
@@ -99,6 +105,7 @@ const properties = {
   indicators: false,
   easing: 'easeIn',
   arrows: true,
+  autoplay: false,
 
   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
@@ -255,14 +262,15 @@ class BlogIndex extends React.Component {
       title="Popular Favorites"
     >
     
+
+
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Popular Favorites</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
    
     
 
-<div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
 
-<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Popular Favorites</div>
-
-<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/favorites/"
             className="button box-shadow"
