@@ -5,26 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import ScrollAnimation from 'react-animate-on-scroll'
-import Icons from "../util/socialmedia.json"
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
-import {
-  RiFacebookBoxFill,
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiYoutubeFill,
-  RiInstagramFill,
-  RiRssFill,
-  RiGithubFill,
-  RiTelegramFill,
-  RiPinterestFill,
-  RiSnapchatFill,
-  RiSkypeFill,
-  RiDribbbleFill,
-  RiMediumFill,
-  RiBehanceFill,
-} from "react-icons/ri"
-import { FaWordpress, FaVk } from "react-icons/fa"
-// import Image from '../components/Image'
+import Social from "../components/social"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -102,39 +83,7 @@ const HomePage = ({ data }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
-    const sIcons = Icons.socialIcons.map((icons, index) => {
-      return (
-        <div key={"social icons" + index}>
-          
-          {icons.icon === "facebook" ? (
-            <a className="social"  href={icons.url} alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a>
-          ) : (
-            ""
-          )}
-          {icons.icon === "twitter" ? (
-           <a className="social" href={icons.url} alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a>
-          ) : (
-            ""
-          )}
-          {icons.icon === "linkedin" ? (
-            <a className="social" href={icons.url} alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a>
-          ) : (
-            ""
-          )}
-          {icons.icon === "youtube" ? (
-            <a className="social" href={icons.url} alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a>
-          ) : (
-            ""
-          )}
-          {icons.icon === "instagram" ? (
-            <a className="social" href={icons.url} alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a>
-          ) : (
-            ""
-          )}
-      
-        </div>
-      )
-    })
+
   return (
     <CustomBox style={{}}>
     <Layout>
@@ -175,20 +124,11 @@ const HomePage = ({ data }) => {
           </Link>
 
           
-          <div
-            className="social-icons"
-            sx={{
-              variant: "variants.socialIcons",
-              justifyContent:'center',
-            }}
-          >
-            <div style={{fontSize:'40%', textAlign:'center', marginRight:'1rem'}}><strong>I'm<br />Social</strong></div>
-            {sIcons}
-          </div>
+<Social />
           
         </div>
 
-
+        
 
 
 

@@ -2,7 +2,12 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 // import { RiHeart2Line } from "react-icons/ri"
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
+import Social from "../components/social"
+
+
+
+
+
 
 const Footer = () => (
   <footer
@@ -17,10 +22,12 @@ const Footer = () => (
 
         
  
- 
+
+          
+<Social />
 
 
-          <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
+          {/* <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
     <li className="socialtext"><strong>I&apos;m<br />Social</strong></li>
   <li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
   <li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
@@ -29,7 +36,7 @@ const Footer = () => (
   <li style={{display: 'none',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
   
   <li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
-  </ul>
+  </ul> */}
   
   
   

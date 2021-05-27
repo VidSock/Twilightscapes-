@@ -457,7 +457,7 @@ class BlogIndex extends React.Component {
 <br />
 {/* <h4 style={{display:'block', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4> */}
 <ul className="galmenu">
-<li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Bonus Galleries</li>
+<li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Full Archives</li>
       <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>
       <li className="galmenu-item"><Link to="/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
       <li className="galmenu-item"><Link to="/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
@@ -671,7 +671,7 @@ class BlogIndex extends React.Component {
    <Image className="slider" alt="Todd Lambert Personal Site" filename="toddlambert.jpg" />
   <br />
 
-  The original. Todd's oldest web project is his personal site. Learn more about Todd, or maybe even hire him. He's a nice guy.  ;-)
+  The original. Todd's oldest web project is his personal site. Learn more about Todd, or maybe even hire him. I hear that he's a nice guy.  ;-)
   <h5 style={{textAlign:'center',}}>Visit ToddLambert.com</h5></a>
   </div>
 
