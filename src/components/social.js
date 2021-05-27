@@ -56,7 +56,7 @@ const Social = () => (
               justifyContent:'center',
             }}
           >
-            <div style={{fontSize:'1rem', textAlign:'center', margin:'3px 1rem 0 0'}}><strong>I'm<br />Social</strong></div>
+            <div style={{fontSize:'1rem', textAlign:'center', margin:'3px .5rem 0 0'}}><strong>I'm<br />Social</strong></div>
             {sIcons}
           </div>
           

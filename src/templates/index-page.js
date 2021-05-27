@@ -12,6 +12,8 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 
+import Newsletter from "../components/newsletter"
+
 const CustomBox = styled.div`
 
 
@@ -43,7 +45,7 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 900)
+            gatsbyImageData(layout: FULL_WIDTH, width: 585, height: 900)
           }
         }
         cta {
@@ -156,8 +158,8 @@ const HomePage = ({ data }) => {
       )}
 
       
-<div style={{position:'absolute', height:'', top:'0', right:'0'}}>
-<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'60px', right:'10%', border:'0px solid yellow'}}>
+<div style={{position:'absolute', height:'', width:'100%', top:'0', right:'0',}}>
+<ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
         <h2
           className="boom normal txtshadow-header hit-the-floor"
           style={{
@@ -178,7 +180,7 @@ const HomePage = ({ data }) => {
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'6vh', right:'10%', border:'0px solid yellow'}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1500} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
@@ -195,7 +197,7 @@ const HomePage = ({ data }) => {
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'6vh', right:'10%', border:'0px solid yellow'}}>
+  <ScrollAnimation animateIn="bounceInUp" delay={1450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'20px', right:'10%', border:'0px solid yellow'}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
@@ -212,7 +214,32 @@ const HomePage = ({ data }) => {
           Night
         </h2>
         </ScrollAnimation>
+
+
+
+        <ScrollAnimation animateIn="bounceInUp" delay={1750} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'250px', border:'0px solid yellow', justifyContent:'center', width:'', textAlign:'center'}}>
+
+{/* <Link
+            to="/galleries/"
+            className="button"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+
+            {frontmatter.cta.ctaText}
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link> */}
+
+          <Newsletter />
+</ScrollAnimation>
+
+
 </div>
+
+
 
 
 </div>
