@@ -19,6 +19,79 @@ import 'react-slideshow-image/dist/styles.css'
 
 // import Gall1 from '../components/gallery1'
 
+
+import styled from "styled-components";
+const CustomBox = styled.div`
+
+
+.newsletter{position:relative;}
+
+// input::placeholder {
+//   color: #111;
+// }
+
+.signbox{
+  display:flex;
+  justify-content: center;
+  align-items:baseline;
+position:absolute;
+right:5%;
+top:10%;
+}
+
+
+.blocker{
+  content: ;
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index: -1;
+  opacity: 1 ;
+  overflow: 'hidden';
+   display:block;
+   margin:0 auto;
+  padding:0;
+  cursor:default;
+   transition: all 0.15s;
+  animation:fade .8s forwards;
+  background: rgba(0,0,0,0.50);
+  backdrop-filter: blur(4px);
+  border-radius:12px;
+  border:1px solid #000;
+}
+  @keyframes fade {
+    0%{
+          opacity: 0;
+       }
+       20%{
+        opacity: 0;
+     }
+       100% {
+          opacity:1;
+       }
+    
+    }
+
+
+    @media (max-width: 58em) {
+
+      .signbox{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+      }
+      .signbox input{margin-bottom:10px; margin-right:0;}
+
+    }
+
+
+}
+
+`
+
+
+
 const properties = {
   duration: 4000,
   transitionDuration: 500,
@@ -133,7 +206,9 @@ class BlogIndex extends React.Component {
     }
 
     return (
+
       <Layout className="blog-page1">
+        <CustomBox style={{}}>
         <Seo
           title={"Twilightscapes Galleries — Page " + currentPage + " of " + numPages}
           description={
@@ -147,7 +222,7 @@ class BlogIndex extends React.Component {
         textAlign: "center",
       }}
     >
-<h1 style={{padding:'10px 0 0 0', margin:'0'}}>Themed Galleries</h1>
+{/* <h1 style={{padding:'20px 0 0 0', margin:'0 0 0 0', fontSize:'16px'}}>Themed Galleries</h1> */}
 
     </div>
 
@@ -157,8 +232,8 @@ class BlogIndex extends React.Component {
 {/* <Gall1 /> */}
 
 <br />
-<div style={{ maxHeight:'30%'}}>
-<Slide {...properties} style={{zIndex:'-1'}}>
+<div style={{height:'', border:'0px solid yellow'}}>
+<Slide {...properties} style={{zIndex:'-1',}}>
 <article
     className="post-card1 each-slide"
     sx={{
@@ -167,6 +242,9 @@ class BlogIndex extends React.Component {
       border:'0px solid blue'
     }}
   >
+
+
+
 
 <Link
       className=""
@@ -177,14 +255,14 @@ class BlogIndex extends React.Component {
       title="Popular Favorites"
     >
     
-    <div >
-      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'', zIndex:'', }} />
-    </div>
+   
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', border:'0px solid green', fontSize:'8vw'}}>Popular Favorites</div>
+<div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
 
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Popular Favorites</div>
+
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/favorites/"
             className="button box-shadow"
@@ -196,9 +274,23 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
 </div>
+
+<div className="blocker"></div>
+
+</div>
+
+
+  
+
+
+  
         
+
+<div >
+      <Image className="slider" alt="Popular Favorites" filename="homepage.jpg" style={{backgroundSize:'', height:'', zIndex:'', }} />
+    </div>
 
 </Link>
 </article>
@@ -223,15 +315,13 @@ class BlogIndex extends React.Component {
       title="Relics of Rust"
     >
     
-    <div >
-    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
+   
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Relics of Rust</div>
 
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+<div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Relics of Rust</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/cars/"
             className="button box-shadow"
@@ -243,9 +333,17 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
+</div>
+<div className="blocker"></div>
 </div>
 
+
+
+
+ <div >
+    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night400.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
 
 </Link>
 </article>
@@ -272,15 +370,12 @@ class BlogIndex extends React.Component {
       title="Milky Way"
     >
     
-    <div >
-    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
+
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Milky Way</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Milky Way</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/milkyway/"
             className="button box-shadow"
@@ -292,9 +387,14 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
+</div>
+<div className="blocker"></div>
 </div>
 
+    <div >
+    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
 </Link>
 </article>
 
@@ -320,15 +420,12 @@ class BlogIndex extends React.Component {
       title="Ghost Towns"
     >
     
-    <div >
-    <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
+    
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Ghost Towns</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Ghost Towns</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/ghosttowns/"
             className="button box-shadow"
@@ -340,9 +437,14 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
+</div>
+<div className="blocker"></div>
 </div>
 
+<div >
+    <Image className="slider" alt="Todd Photographs the Ghost Towns" filename="night305.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
 
 </Link>
 </article>
@@ -370,15 +472,12 @@ class BlogIndex extends React.Component {
       title="Crazy Geology"
     >
     
-    <div >
-    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
+    
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Crazy Geology</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>Crazy Geology</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
             to="/crazygeo/"
             className="button box-shadow"
@@ -390,10 +489,14 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
+</div>
+<div className="blocker"></div>
 </div>
 
-
+<div >
+    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
 </Link>
 </article>
 
@@ -422,17 +525,14 @@ class BlogIndex extends React.Component {
       title="During Daytime"
     >
     
-    <div >
-    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
+    
     
 
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>During Daytime</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <div className="signbox" style={{background:'transparent', margin:'0 10px', padding:'0 10px', borderRadius:'12px', textAlign:'center', justifyContent:'center', border:'0px solid red', width:'50%', height:'200px', zIndex:'1', }}>
+<div style={{width:'100%', border:'0px solid green', fontSize:'40px'}}>During Daylight</div>
+<div style={{ width:'100%', fontSize:'8vw'}}>
     <Link
-            to="/daytime/"
+            to="/daylight/"
             className="button box-shadow"
             sx={{
               variant: "variants.button",
@@ -442,10 +542,14 @@ class BlogIndex extends React.Component {
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
-          </Link>
+          </Link>              
+</div>
+<div className="blocker"></div>
 </div>
 
-
+<div >
+    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
+    </div>
 </Link>
 </article>
 
@@ -695,7 +799,7 @@ class BlogIndex extends React.Component {
   </div>
 </div>
 
-
+</CustomBox>
 
       </Layout>
     )

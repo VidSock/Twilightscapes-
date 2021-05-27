@@ -17,9 +17,10 @@ const CustomBox = styled.div`
 
 .signbox{
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items:baseline;
 }
+.signbox input{margin-right:14px;}
 
 .blocker{
   content: ;
@@ -60,9 +61,10 @@ const CustomBox = styled.div`
       .signbox{
         display:flex;
         flex-direction:column;
-        justify-content: center;
         align-items:center;
+        width:100%;
       }
+      .signbox input{margin-bottom:10px; margin-right:0;}
 
     }
 
@@ -92,13 +94,15 @@ const NewsletterPage = () => (
 
 <br />
 
-            <label style={{color:'#fff'}}>
-              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>night photography newsletter - (it's free!)</span><br /><br /></label>
+            
+              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>night photography newsletter - (it's free!)</span><br /><br />
 
-             <div className="signbox" style={{display:''}}>
-               <input type="email" name="email" required={true}
+             <div className="signbox" style={{display:'',}}>
+               <label style={{color:'#fff'}} For="email">
+                 <input type="email" name="email" required={true}
                       placeholder="your@email.com"
-                      style={{margin: '0 0 1rem 0', padding:'.8rem', width: '50%', border:'2px solid #666', background:'rgb(51, 51, 51)', borderRadius:'8px'}}/>
+                      style={{margin: '', padding:'.8rem', width: '300px', maxWidth:'100%', border:'2px solid #666', background:'rgb(51, 51, 51)', borderRadius:'8px'}}/></label>
+                      
             
 
 
@@ -108,7 +112,8 @@ const NewsletterPage = () => (
               className="button"
               sx={{
                 variant: "variants.button",
-                cursor:'pointer'
+                cursor:'pointer',
+                width:'',
               }}
               type="submit"
             >
