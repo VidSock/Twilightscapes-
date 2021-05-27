@@ -69,7 +69,7 @@ const NewsletterPage = () => (
 
 <br />
             <label style={{color:'#fff'}}>
-              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>Night photography newsletter - (it's free!)</span><br /><br />
+              <strong>Follow Me Into The Night</strong><br /> <span style={{fontSize:'70%'}}>night photography newsletter - (it's free!)</span><br /><br />
               <input type="email" name="email" required={true}
                       placeholder="your@email.com"
                       style={{margin: '0 1rem 1rem 0', padding:'.6rem .8rem', width: '50%', border:'2px solid #666', borderRadius:'8px'}}/>
