@@ -35,8 +35,6 @@ const CustomBox = styled.div`
    margin:0 auto;
   padding:0;
   cursor:default;
-   transition: all 0.15s;
-  animation:fade .8s forwards;
   background: rgba(0,0,0,0.50);
   backdrop-filter: blur(4px);
   border-radius:12px;
