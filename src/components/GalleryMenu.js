@@ -11,8 +11,13 @@ import {  RiArrowRightSLine } from "react-icons/ri"
 
 const CustomBox = styled.div`
 
-
+.themed{margin-top:20px;}
 @media (max-width: 58em) {
+
+
+
+
+.themed{margin-top:10px;}
 
   .themed .button {
     --padding: 15px;
@@ -26,6 +31,26 @@ const CustomBox = styled.div`
     appearance: none;
     border: none;
     font-size: 16px;
+    line-height: 1;
+    transition: background 0.3s linear;
+    }
+
+
+  .fullarchive .button {
+    --padding: 15px;
+    --margin: 10px;
+    display: flex;
+    // align-items: flex-start;
+    padding: var(--padding) calc(var(--padding) * 1);
+    border-radius: 12px;
+    // width:20px;
+    // padding:14px;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 16px;
+    text-align:left;
     line-height: 1;
     transition: background 0.3s linear;
     }
@@ -183,11 +208,11 @@ const GalleryMenu = () => (
 
 
       {/* <h4 style={{display:'', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4> */}
-      <br /> <br />
-      <ul className="galmenu">
+      <br />
+      <ul className="galmenu fullarchive">
       {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
 
-      <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Full<br />Archives</li>
+      <li style={{width:'', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 0',}}>Full Archives</li>
 
 
       <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>

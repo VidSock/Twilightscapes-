@@ -8,14 +8,16 @@ import Layout from "../components/layout"
 import GalleryMenu from '../components/GalleryMenu'
 
 const Milkyway = () => (
-  <Layout className="thanks-page">
+  <Layout className="milky-page" style={{padding:'10px 20px !important'}}>
     <Seo title="Twilightscapes Photo Galleries - Milky Way" />
           
     <GalleryMenu />
     <div
-      className="wrapper"
+      className="wrapper1"
       style={{
         textAlign: "center",
+        marginTop:'0',
+        paddingTop:'0',
       }}
     >
       
