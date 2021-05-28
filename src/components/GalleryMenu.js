@@ -12,7 +12,25 @@ import {  RiArrowRightSLine } from "react-icons/ri"
 const CustomBox = styled.div`
 
 
+@media (max-width: 58em) {
 
+  .themed .button {
+    --padding: 15px;
+    --margin: 20px;
+    display: flex;
+    // align-items: flex-start;
+    padding: var(--padding) calc(var(--padding) * 1);
+    border-radius: 12px;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    transition: background 0.3s linear;
+    }
+  
+}
 
 `
 
@@ -23,8 +41,8 @@ const GalleryMenu = () => (
 
 <CustomBox style={{}}>
 
-<div className="outer intro" style={{backgroundColor:'', borderTop:'0px solid #000',}}>
-      <div className="container1 content" style={{padding:'0 0 10px 0',}}>
+{/* <div className="outer intro" style={{backgroundColor:'', borderTop:'0px solid #000',}}>
+      <div className="container1 content" style={{padding:'0 0 10px 0',}}> */}
     
 {/* <h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> ( requires free<Link to="/install"> app installation here</Link> )</span></h2> */}
 
@@ -39,7 +57,7 @@ const GalleryMenu = () => (
       
       
       
-      <ul className="galmenu custom-gal" style={{margin:'0 !important',}}>
+      <ul className="galmenu themed custom-gal" style={{margin:'0 !important',}}>
 
       <li style={{width:'100px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 0 0 0',}}>Themed Galleries</li>
 
@@ -139,7 +157,7 @@ const GalleryMenu = () => (
       }}
       title="During Daytime Gallery"
     >
-      During Daytime
+      Day Light
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
@@ -193,8 +211,8 @@ const GalleryMenu = () => (
       <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10"  title="Gallery 10">X</Link></li> */}
       </ul>
 
-</div>
-      </div>
+{/* </div>
+      </div> */}
 
 </CustomBox>
   
