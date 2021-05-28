@@ -8,14 +8,16 @@ import Layout from "../components/layout"
 import GalleryMenu from '../components/GalleryMenu'
 
 const Gal4= () => (
-  <Layout className="thanks-page">
+  <Layout className="gal4-page">
     <Seo title="Twilightscapes Photo Galleries - Gallery 4" />
           
     <GalleryMenu />
     <div
-      className="wrapper"
+      className="wrapper1"
       style={{
         textAlign: "center",
+        marginTop:'0',
+        paddingTop:'0',
       }}
     >
       

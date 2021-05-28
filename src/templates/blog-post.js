@@ -82,7 +82,7 @@ const Post = ({ data, pageContext }) => {
   }
 
   return (
-    <Layout className="page">
+    <Layout className="page1">
       <Seo
         title={frontmatter.title}
         description={
@@ -91,12 +91,9 @@ const Post = ({ data, pageContext }) => {
         image={Image}
         article={true}
       />
-      <article className="blog-post">
-        <header className="featured-banner">
-          <section className="article-header">
-            <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-          </section>
+      <article className="blog-post1">
+        <header className="featured-banner1">
+          <br />
           {Image ? (
             <GatsbyImage
               image={Image}
@@ -106,6 +103,11 @@ const Post = ({ data, pageContext }) => {
           ) : (
             ""
           )}
+
+        <section className="article-header">
+            <h1>{frontmatter.title}</h1>
+            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+          </section>
         </header>
 
         <div
