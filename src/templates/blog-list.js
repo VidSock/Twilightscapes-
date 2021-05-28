@@ -112,12 +112,12 @@ font-size:30px !important;
 
 const properties = {
   duration: 4000,
-  transitionDuration: 500,
+  transitionDuration: 400,
   infinite: true,
   indicators: false,
   easing: 'easeIn',
   arrows: true,
-  autoplay: false,
+  autoplay: true,
 
   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
@@ -552,7 +552,7 @@ class BlogIndex extends React.Component {
 <div style={{width:'100%', border:'0px solid green', fontSize:''}}>During Daylight</div>
 <div style={{ width:'100%', fontSize:''}}>
     <Link
-            to="/daylight/"
+            to="/daytime/"
             className="button "
             sx={{
               // variant: "variants.button",
