@@ -150,7 +150,7 @@ const abouttodd = () => (
 
 <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={true} delay={1800}> 
 <div style={{margin:'1rem auto 0 auto', color:'#fff', width:'90%', textAlign:'center',}}>
-<h3>OK, who wants to read that crap?</h3> Lets keep things real, shall we?
+<h3>OK, who wants to read that crap?</h3> Lets keep things fun, shall we?
 </div></ScrollAnimation> 
 
 </ScrollAnimation>
