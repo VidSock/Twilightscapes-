@@ -84,7 +84,7 @@ const NewsletterPage = () => (
           data-netlify="true"
           data-netlify-honeypot="bot-field">
 
-            <div className="newsletter" style={{background:'', margin:'0 10px', padding:'10px 0 10px 0', borderRadius:'12px', textAlign:'center'}}>
+            <div className="newsletter" style={{background:'', margin:'0 10px', padding:'10px 0 10px 0', borderRadius:'12px', textAlign:'center', color:'#fff'}}>
 
               <div className="blocker"></div>
 
