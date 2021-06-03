@@ -68,11 +68,11 @@ const Navbar2 = class extends React.Component {
     <ul className="sidebarMenuInner">
       {/* <li>Todd Lambert <span>Web Developer</span></li> */}
       
-      <li>
+      {/* <li>
               <Link className="navbar-item txtshadow" to="https://shop.twilightscapes.com/">
                 Shop Now <span>Buy Twilightscapes</span>
               </Link>
-      </li>
+      </li> */}
 
       <li>
               <Link className="navbar-item txtshadow" to="/galleries/">
