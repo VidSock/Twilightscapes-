@@ -2,18 +2,16 @@
 template: index-page
 slug: /
 title: Night Photography
-tagline: Todd Lambert - a pioneer in night photography
+tagline: Unique Night Photography by Todd Lambert
 featuredImage: /assets/night316.jpg
 cta:
-  ctaText: View the work
-  ctaLink: /galleries/
+  ctaText: View The Photos
+  ctaLink: /photos/
 ---
-
 Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time.
 
-As a location scout and avid urban explorer, Todd learned to photograph what he sees at night. 
+As a location scout and avid urban explorer, Todd learned to photograph what he sees and to bring the unique subject matter he finds to light.
 
-> The night is misunderstood and often feared. But the truest colors come out only at night. There is no better time than nighttime.
-> <div style="text-align:right; margin-right:20%; margin-top:10px;" /> – Todd Lambert
+> Finding yourself at 3am in a graveyard filming flowers; some may see that as weird, but for me, it's pure tranquility.
 
-Let Todd's award winning work prove to you that the night is indeed beautiful.
+Let Todd's night photography and digital storytelling, prove to you that the night is indeed beautiful.
