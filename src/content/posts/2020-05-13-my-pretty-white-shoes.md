@@ -20,7 +20,7 @@ I’ve stayed pretty silent about this entire topic for awhile now, but today it
 
 I’ll begin by saying that to me, the titling of my images is very important. It is a “non-crucial”, but effective tool that the photographer has to imprint something extra onto their work. Something that can have dramatic effect (both good and bad) to how an audience views the subject.
 
-For me, I like to say that titles choose the image rather than the other way around. The title of an image allows me to set a mood, help put the viewer into a scene, build a story, create drama, etc… It allows me to sneak a bit of my personality and soul into my work.
+For me, I like to say that the title chooses the image rather than the other way around. The title of an image allows me to set a mood, help put the viewer into a scene, build a story, create drama, etc… It allows me to sneak a bit of my personality and soul into my work.
 
 Of course this is ideally done through the photo itself, and I do NOT argue in any way, that this should be a substitute for creating a compelling image. As I mentioned earlier, it is a “NON-CRITICAL” tool that the photographer has. Remember, just because you title something “Awesome”, doesn’t make it so.
 
