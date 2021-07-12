@@ -2,7 +2,7 @@
 template: index-page
 slug: /
 title: Night Photography
-tagline: Unique Night Photography by Todd Lambert
+tagline: Unique Night Photography of abandoned locations by Todd Lambert
 featuredImage: /assets/night316.jpg
 cta:
   ctaText: View The Photos
